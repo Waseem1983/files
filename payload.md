@@ -61,13 +61,13 @@ This document's target is to define all payload parameters in the different requ
 |merchant.services.serviceType|alphabetic|15|DCC, RENTAL, MC_3D_SECURE|mandatory |optional | | | |
 |merchant.services.dccProvider|alphabetic|2|PP, FX|mandatory in case of serviceType is DCC |optional | | | |
 |merchant.services.dccSettlementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory in case of serviceType is DCC |optional | | | |
-|merchant.services.daysOfMonth|numeric|2||mandatory in case of serviceType is DCC | | | | |
-|merchant.services.dccAcquirerRate|numeric|10||mandatory in case of serviceType is DCC | | | | |
-|merchant.services.dccMerchantMarkupRate|numeric|10||mandatory in case of serviceType is DCC | | | | |
-|merchant.services.dccMarkupRate|numeric|10||mandatory in case of serviceType is 'DCC' | | | | |
-|merchant.services.rentalModeCode|alphabetic|10|CASH, CHEQUE|mandatory in case of serviceType is 'RENTAL' | | | | |
-|merchant.services.rentalModeName|alphabetic|10||mandatory in case of serviceType is 'RENTAL' | | | | |
-|**merchant.terminals**|object[]|N/A||optional | | | | |
+|merchant.services.daysOfMonth|numeric|2||mandatory in case of serviceType is DCC |optional | | | |
+|merchant.services.dccAcquirerRate|numeric|10||mandatory in case of serviceType is DCC |optional | | | |
+|merchant.services.dccMerchantMarkupRate|numeric|10||mandatory in case of serviceType is DCC |optional | | | |
+|merchant.services.dccMarkupRate|numeric|10||mandatory in case of serviceType is 'DCC' |optional | | | |
+|merchant.services.rentalModeCode|alphabetic|10|CASH, CHEQUE|mandatory in case of serviceType is 'RENTAL' |optional | | | |
+|merchant.services.rentalModeName|alphabetic|10||mandatory in case of serviceType is 'RENTAL' |optional | | | |
+|**merchant.terminals**|object[]|N/A||optional |optional | | | |
 |merchant.terminals.terminalId|alphanumeric|25||mandatory | | | | |
 |merchant.terminals.terminalType|alphanumeric|10||mandatory | | | | |
 |merchant.terminals.maker|alphanumeric|10||mandatory | | | | |
@@ -89,7 +89,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc4MDEyMTA5LC0xODU4NzcyOTM5LC0yMD
-g5NDU3NjgsLTExNDMxMDMyMiwxOTM1ODI0MDE4LDY2ODcyNjQ3
-OF19
+eyJoaXN0b3J5IjpbLTMyNjc1MzgxMSw5NzgwMTIxMDksLTIwOD
+k0NTc2OCwtMTE0MzEwMzIyLDE5MzU4MjQwMTgsNjY4NzI2NDc4
+XX0=
 -->
