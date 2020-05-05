@@ -47,9 +47,9 @@ This document's target is to define all payload parameters in the different requ
 |**merchant.configurations.acceptedCardSchemes**|object[]|N/A||mandatory | mandatory| | | |
 |merchant.configurations.acceptedCardSchemes.cardScheme|alphabetic|4|VISA, MC, PL, JCB, CUP, MER, DCI, AMEX, TBOD, DODB, DOCR, DOHY, SBOC, SBOD, DOPR|mandatory | mandatory| | | |
 |merchant.configurations.acceptedCardSchemes.tariffRate|numeric|10||mandatory in case of simple pricing merchants | optional| | | |
-|**merchant.configurations.acceptedCardSchemes.acceptedCardModes**|object[]|N/A||mandatory in case of complex pricing merchants |optional | | | |
-|merchant.configurations.acceptedCardSchemes.acceptedCardModes.modeName|alphabetic|15|ELECTRONIC, MANUAL, INTERNATIONAL, DOMESTIC, PREMIUM|mandatory |optional | | | |
-|merchant.configurations.acceptedCardSchemes.acceptedCardModes.rate|numeric|10||mandatory |optional | | | |
+|**merchant.configurations.acceptedCardSchemes.acceptedCardModes**|object[]|N/A||mandatory in case of complex pricing merchants |N/A | | | |
+|merchant.configurations.acceptedCardSchemes.acceptedCardModes.modeName|alphabetic|15|ELECTRONIC, MANUAL, INTERNATIONAL, DOMESTIC, PREMIUM|mandatory |N/A | | | |
+|merchant.configurations.acceptedCardSchemes.acceptedCardModes.rate|numeric|10||mandatory |N | | | |
 |**merchant.configurations.acceptedCardSchemes.schemeOverrideValue**|object|N/A||mandatory in case overrideDefaultSchemesMcc is true| optional| | | |
 |merchant.configurations.acceptedCardSchemes.schemeOverrideValue.mcc|numeric|5||mandatory|optional | | | |
 |merchant.configurations.acceptedCardSchemes.schemeOverrideValue.dbaName|alphanumeric|100||mandatory|optional | | | |
@@ -89,6 +89,6 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMxMzU1ODQ2LC0yMDg5NDU3NjgsMTkzNT
-gyNDAxOCwxODQ4NzE3NTIyXX0=
+eyJoaXN0b3J5IjpbLTk4ODMxOTQ4OCw1MzEzNTU4NDYsLTIwOD
+k0NTc2OCwxOTM1ODI0MDE4LDE4NDg3MTc1MjJdfQ==
 -->
