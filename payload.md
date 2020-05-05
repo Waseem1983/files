@@ -90,5 +90,5 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY4NzI2NDc4XX0=
+eyJoaXN0b3J5IjpbMTg0ODcxNzUyMl19
 -->
