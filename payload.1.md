@@ -38,27 +38,27 @@ This document's target is to define all payload parameters in the different requ
 |merchant.addresses.pobox|numeric|25 ||optional |mandatory || | |
 |merchant.addresses.longitude|numeric|25 ||optional | optional| | | |
 |merchant.addresses.latitude|numeric|25 ||optional | optional| | | |
-|merchant.addresses.fax|numeric|25 ||optional | optional| | | |
-|merchant.addresses.email|alphanumeric|256 ||mandatory |optional | | | |
+|merchant.addresses.fax|numeric|25 ||optional | | | | |
+|merchant.addresses.email|alphanumeric|256 ||mandatory | | | | |
 |**merchant.configurations**|object|N/A||mandatory | mandatory| | | |
 |merchant.configurations.overrideDefaultSchemesMcc|boolean|5||optional |optional | | | |
-|merchant.configurations.commissionSettlement|alphabetic|15|NEXT_STTLM,  M1|mandatory |optional | | | |
-|merchant.configurations.refundControlValue|alphabetic|1|G, R, C, N|mandatory |optional | | | |
+|merchant.configurations.commissionSettlement|alphabetic|15|NEXT_STTLM,  M1|mandatory | | | | |
+|merchant.configurations.refundControlValue|alphabetic|1|G, R, C, N|mandatory | | | | |
 |**merchant.configurations.acceptedCardSchemes**|object[]|N/A||mandatory | mandatory| | | |
 |merchant.configurations.acceptedCardSchemes.cardScheme|alphabetic|4|VISA, MC, PL, JCB, CUP, MER, DCI, AMEX, TBOD, DODB, DOCR, DOHY, SBOC, SBOD, DOPR|mandatory | mandatory| | | |
-|merchant.configurations.acceptedCardSchemes.tariffRate|numeric|10||mandatory in case of simple pricing merchants | optional| | | |
+|merchant.configurations.acceptedCardSchemes.tariffRate|numeric|10||mandatory in case of simple pricing merchants | | | | |
 |**merchant.configurations.acceptedCardSchemes.acceptedCardModes**|object[]|N/A||mandatory in case of complex pricing merchants |N/A | | | |
 |merchant.configurations.acceptedCardSchemes.acceptedCardModes.modeName|alphabetic|15|ELECTRONIC, MANUAL, INTERNATIONAL, DOMESTIC, PREMIUM|mandatory |N/A | | | |
 |merchant.configurations.acceptedCardSchemes.acceptedCardModes.rate|numeric|10||mandatory |N/A | | | |
 |**merchant.configurations.acceptedCardSchemes.schemeOverrideValue**|object|N/A||mandatory in case overrideDefaultSchemesMcc is true| N/A| | | |
 |merchant.configurations.acceptedCardSchemes.schemeOverrideValue.mcc|numeric|5||mandatory|N/A | | | |
-|merchant.configurations.acceptedCardSchemes.schemeOverrideValue.dbaName|alphanumeric|100||mandatory|N/A | | | |
+|merchant.configurations.acceptedCardSchemes.schemeOverrideValue.dbaName|alphanumeric|100||mandatory| | | | |
 |**merchant.configurations.fees**|object[]|N/A||mandatory | N/A| | | |
 |merchant.configurations.fees.feeTypeName|alphabetic|15|MIS, ACQ_MMBR_FEE, MFEE_STRT, MFEE_FRD_HND, FRAUD_HAND_FEE, TRANS_FEE, REFUND_FEE|mandatory | N/A| | | |
 |merchant.configurations.fees.reOccurrenceFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |N/A| | | |
 |merchant.configurations.fees.feeValue|numeric|10||mandatory |N/A| | | |
 |**merchant.services**|object[]|N/A||optional | N/A| | | |
-|merchant.services.serviceType|alphabetic|15|DCC, RENTAL, MC_3D_SECURE|mandatory |N/A | | | |
+|merchant.services.serviceType|alphabetic|15|DCC, RENTAL, MC_3D_SECURE|mandatory |N/A| | | |
 |merchant.services.dccProvider|alphabetic|2|PP, FX|mandatory in case of serviceType is DCC |N/A | | | |
 |merchant.services.dccSettlementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory in case of serviceType is DCC |N/A | | | |
 |merchant.services.daysOfMonth|numeric|2||mandatory in case of serviceType is DCC |N/A | | | |
@@ -67,21 +67,21 @@ This document's target is to define all payload parameters in the different requ
 |merchant.services.dccMarkupRate|numeric|10||mandatory in case of serviceType is 'DCC' |N/A | | | |
 |merchant.services.rentalModeCode|alphabetic|10|CASH, CHEQUE|mandatory in case of serviceType is 'RENTAL' |N/A| | | |
 |merchant.services.rentalModeName|alphabetic|10||mandatory in case of serviceType is 'RENTAL' |N/A| | | |
-|**merchant.terminals**|object[]|N/A||optional |optional | | | |
+|**merchant.terminals**|object[]|N/A||optional || | | |
 |merchant.terminals.terminalId|alphanumeric|25||mandatory |mandatory | | | |
-|merchant.terminals.terminalType|alphanumeric|10||mandatory | optional| | | |
-|merchant.terminals.maker|alphanumeric|10||mandatory | optional| | | |
-|merchant.terminals.terminalModel|alphanumeric|25||mandatory | optional| | | |
-|merchant.terminals.communicationMethod|alphanumeric|10|SG,  GPRS_SIM|mandatory |optional | | | |
-|merchant.terminals.dccEnabled|boolean|5||mandatory | optional| | | |
-|**merchant.terminals.fees**|object[]|N/A||mandatory | N/A| | | |
+|merchant.terminals.terminalType|alphanumeric|10||mandatory | | | | |
+|merchant.terminals.maker|alphanumeric|10||mandatory | | | | |
+|merchant.terminals.terminalModel|alphanumeric|25||mandatory | | | | |
+|merchant.terminals.communicationMethod|alphanumeric|10|SG,  GPRS_SIM|mandatory || | | |
+|merchant.terminals.dccEnabled|boolean|5||mandatory | | | | |
+|**merchant.terminals.fees**|object[]|N/A||mandatory | N/Aoptional| | | |
 |merchant.terminals.fees.feeType|alphabetic|25|SIM_FEE,  GPRS_FEE,  TERMINAL_RENTAL_FEE,  INS_FEE|mandatory |N/A | | | |
 |merchant.terminals.fees.feeValue|numeric|10||mandatory | N/A| | | |
 |**merchant.terminals.allowedOperations**|object|N/A||optional |N/A | | | |
 |merchant.terminals.allowedOperations.tips|boolean|5||optional | N/A| | | |
 |merchant.terminals.allowedOperations.standardFunction||boolean|5|N/A | | | | |
-|merchant.terminals.allowedOperations.refund|boolean|5||optional |N/A | | | |
-|merchant.terminals.allowedOperations.preAuthorization|boolean|5||N/A | | | | |
+|merchant.terminals.allowedOperations.refund|boolean|5|| |N/A | | | |
+|merchant.terminals.allowedOperations.preAuthorization|boolean|5||N/Aoptional | | | | |
 |merchant.terminals.allowedOperations.keyEntry|boolean|5||optional | N/A| | | |
 |merchant.terminals.allowedOperations.cashAdvance|boolean|5||optional |N/A | | | |
 |**merchant.user**|object|N/A||N/A | | | | |
@@ -89,6 +89,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTk3NzIzNCw1MzEzNTU4NDYsLTIwOD
-k0NTc2OCwxOTM1ODI0MDE4LDE4NDg3MTc1MjJdfQ==
+eyJoaXN0b3J5IjpbLTgwMzg5MTI2NiwtMTg5OTc3MjM0LDUzMT
+M1NTg0NiwtMjA4OTQ1NzY4LDE5MzU4MjQwMTgsMTg0ODcxNzUy
+Ml19
 -->
