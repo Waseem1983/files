@@ -35,7 +35,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.addresses.city|alphabetic|100 ||mandatory | mandatory| | | |
 |merchant.addresses.phone|numeric|25 ||optional | mandatory| | | |
 |merchant.addresses.postalCode|numeric|25 ||mandatory |mandatory| | | |
-|merchant.addresses.pobox|numeric|25 ||optional |mandatory | | | |
+|merchant.addresses.pobox|numeric|25 ||optional |mandatory || | |
 |merchant.addresses.longitude|numeric|25 ||optional | optional| | | |
 |merchant.addresses.latitude|numeric|25 ||optional | optional| | | |
 |merchant.addresses.fax|numeric|25 ||optional | optional| | | |
@@ -89,6 +89,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTg3NzI5MzksLTIwODk0NTc2OCwtMT
-E0MzEwMzIyLDE5MzU4MjQwMTgsNjY4NzI2NDc4XX0=
+eyJoaXN0b3J5IjpbOTc4MDEyMTA5LC0xODU4NzcyOTM5LC0yMD
+g5NDU3NjgsLTExNDMxMDMyMiwxOTM1ODI0MDE4LDY2ODcyNjQ3
+OF19
 -->
