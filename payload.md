@@ -33,19 +33,19 @@ This document's target is to define all payload parameters in the different requ
 |merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory | | | |
 |merchant.addresses.state|alphabetic|100 ||optional | mandatory| | | |
 |merchant.addresses.city|alphabetic|100 ||mandatory | mandatory| | | |
-|merchant.addresses.phone|numeric|25 ||optional | manda| | | |
-|merchant.addresses.postalCode|numeric|25 ||mandatory | | | | |
-|merchant.addresses.pobox|numeric|25 ||optional | | | | |
-|merchant.addresses.longitude|numeric|25 ||optional | | | | |
-|merchant.addresses.latitude|numeric|25 ||optional | | | | |
-|merchant.addresses.fax|numeric|25 ||optional | | | | |
-|merchant.addresses.email|alphanumeric|256 ||mandatory | | | | |
-|**merchant.configurations**|object|N/A||mandatory | | | | |
-|merchant.configurations.overrideDefaultSchemesMcc|boolean|5||optional | | | | |
-|merchant.configurations.commissionSettlement|alphabetic|15|NEXT_STTLM,  M1|mandatory | | | | |
-|merchant.configurations.refundControlValue|alphabetic|1|G, R, C, N|mandatory | | | | |
-|**merchant.configurations.acceptedCardSchemes**|object[]|N/A||mandatory | | | | |
-|merchant.configurations.acceptedCardSchemes.cardScheme|alphabetic|4|VISA, MC, PL, JCB, CUP, MER, DCI, AMEX, TBOD, DODB, DOCR, DOHY, SBOC, SBOD, DOPR|mandatory | | | | |
+|merchant.addresses.phone|numeric|25 ||optional | mandatory| | | |
+|merchant.addresses.postalCode|numeric|25 ||mandatory |mandatory| | | |
+|merchant.addresses.pobox|numeric|25 ||optional |mandatory | | | |
+|merchant.addresses.longitude|numeric|25 ||optional | optional| | | |
+|merchant.addresses.latitude|numeric|25 ||optional | optional| | | |
+|merchant.addresses.fax|numeric|25 ||optional | optional| | | |
+|merchant.addresses.email|alphanumeric|256 ||mandatory |optional | | | |
+|**merchant.configurations**|object|N/A||mandatory | mandatory| | | |
+|merchant.configurations.overrideDefaultSchemesMcc|boolean|5||optional |optional | | | |
+|merchant.configurations.commissionSettlement|alphabetic|15|NEXT_STTLM,  M1|mandatory |optional | | | |
+|merchant.configurations.refundControlValue|alphabetic|1|G, R, C, N|mandatory |optional | | | |
+|**merchant.configurations.acceptedCardSchemes**|object[]|N/A||mandatory | mandatory| | | |
+|merchant.configurations.acceptedCardSchemes.cardScheme|alphabetic|4|VISA, MC, PL, JCB, CUP, MER, DCI, AMEX, TBOD, DODB, DOCR, DOHY, SBOC, SBOD, DOPR|mandatory | mandatory| | | |
 |merchant.configurations.acceptedCardSchemes.tariffRate|numeric|10||mandatory in case of simple pricing merchants | | | | |
 |**merchant.configurations.acceptedCardSchemes.acceptedCardModes**|object[]|N/A||mandatory in case of complex pricing merchants | | | | |
 |merchant.configurations.acceptedCardSchemes.acceptedCardModes.modeName|alphabetic|15|ELECTRONIC, MANUAL, INTERNATIONAL, DOMESTIC, PREMIUM|mandatory | | | | |
@@ -89,6 +89,6 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTU0NzQ3ODAsLTIwODk0NTc2OCwtMT
-E0MzEwMzIyLDE5MzU4MjQwMTgsNjY4NzI2NDc4XX0=
+eyJoaXN0b3J5IjpbMzI5NDI1MzY1LC0yMDg5NDU3NjgsLTExND
+MxMDMyMiwxOTM1ODI0MDE4LDY2ODcyNjQ3OF19
 -->
