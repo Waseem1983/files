@@ -35,7 +35,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.addresses.city|alphabetic|100 ||mandatory | mandatory| | | |
 |merchant.addresses.phone|numeric|25 ||optional | mandatory| | | |
 |merchant.addresses.postalCode|numeric|25 ||mandatory |mandatory| | | |
-|merchant.addresses.pobox|numeric|25 ||optional |mandatory | | | |
+|merchant.addresses.pobox|numeric|25 ||optional |mandatory || | |
 |merchant.addresses.longitude|numeric|25 ||optional | optional| | | |
 |merchant.addresses.latitude|numeric|25 ||optional | optional| | | |
 |merchant.addresses.fax|numeric|25 ||optional | optional| | | |
@@ -68,17 +68,17 @@ This document's target is to define all payload parameters in the different requ
 |merchant.services.rentalModeCode|alphabetic|10|CASH, CHEQUE|mandatory in case of serviceType is 'RENTAL' |optional | | | |
 |merchant.services.rentalModeName|alphabetic|10||mandatory in case of serviceType is 'RENTAL' |optional | | | |
 |**merchant.terminals**|object[]|N/A||optional |optional | | | |
-|merchant.terminals.terminalId|alphanumeric|25||mandatory | | | | |
-|merchant.terminals.terminalType|alphanumeric|10||mandatory | | | | |
-|merchant.terminals.maker|alphanumeric|10||mandatory | | | | |
-|merchant.terminals.terminalModel|alphanumeric|25||mandatory | | | | |
-|merchant.terminals.communicationMethod|alphanumeric|10|SG,  GPRS_SIM|mandatory | | | | |
-|merchant.terminals.dccEnabled|boolean|5||mandatory | | | | |
-|**merchant.terminals.fees**|object[]|N/A||mandatory | | | | |
-|merchant.terminals.fees.feeType|alphabetic|25|SIM_FEE,  GPRS_FEE,  TERMINAL_RENTAL_FEE,  INS_FEE|mandatory | | | | |
-|merchant.terminals.fees.feeValue|numeric|10||mandatory | | | | |
-|**merchant.terminals.allowedOperations**|object|N/A||optional | | | | |
-|merchant.terminals.allowedOperations.tips|boolean|5||optional | | | | |
+|merchant.terminals.terminalId|alphanumeric|25||mandatory |mandatory | | | |
+|merchant.terminals.terminalType|alphanumeric|10||mandatory | optional| | | |
+|merchant.terminals.maker|alphanumeric|10||mandatory | optional| | | |
+|merchant.terminals.terminalModel|alphanumeric|25||mandatory | optional| | | |
+|merchant.terminals.communicationMethod|alphanumeric|10|SG,  GPRS_SIM|mandatory |optional | | | |
+|merchant.terminals.dccEnabled|boolean|5||mandatory | optional| | | |
+|**merchant.terminals.fees**|object[]|N/A||mandatory | optional| | | |
+|merchant.terminals.fees.feeType|alphabetic|25|SIM_FEE,  GPRS_FEE,  TERMINAL_RENTAL_FEE,  INS_FEE|mandatory |optional | | | |
+|merchant.terminals.fees.feeValue|numeric|10||mandatory | optional| | | |
+|**merchant.terminals.allowedOperations**|object|N/A||optional |optional | | | |
+|merchant.terminals.allowedOperations.tips|boolean|5||optional | optional| | | |
 |merchant.terminals.allowedOperations.standardFunction||boolean|5|optional | | | | |
 |merchant.terminals.allowedOperations.refund|boolean|5||optional | | | | |
 |merchant.terminals.allowedOperations.preAuthorization|boolean|5||optional | | | | |
@@ -89,6 +89,6 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njk5ODgwMTEsLTIwODk0NTc2OCwxOT
-M1ODI0MDE4LDE4NDg3MTc1MjJdfQ==
+eyJoaXN0b3J5IjpbLTE2MTU5NTAzNCwtMjA4OTQ1NzY4LDE5Mz
+U4MjQwMTgsMTg0ODcxNzUyMl19
 -->
