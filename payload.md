@@ -76,20 +76,20 @@ This document's target is to define all payload parameters in the different requ
 |merchant.terminals.dccEnabled|boolean|5||mandatory | optional| | | |
 |**merchant.terminals.fees**|object[]|N/A||mandatory | N/A| | | |
 |merchant.terminals.fees.feeType|alphabetic|25|SIM_FEE,  GPRS_FEE,  TERMINAL_RENTAL_FEE,  INS_FEE|mandatory |N/A | | | |
-|merchant.terminals.fees.feeValue|numeric|10||mandatory | optional| | | |
-|**merchant.terminals.allowedOperations**|object|N/A||optional |optional | | | |
-|merchant.terminals.allowedOperations.tips|boolean|5||optional | optional| | | |
-|merchant.terminals.allowedOperations.standardFunction||boolean|5|optional | | | | |
-|merchant.terminals.allowedOperations.refund|boolean|5||optional |optional | | | |
-|merchant.terminals.allowedOperations.preAuthorization|boolean|5||optional | | | | |
-|merchant.terminals.allowedOperations.keyEntry|boolean|5||optional | optional| | | |
-|merchant.terminals.allowedOperations.cashAdvance|boolean|5||optional |optional | | | |
+|merchant.terminals.fees.feeValue|numeric|10||mandatory | N/A| | | |
+|**merchant.terminals.allowedOperations**|object|N/A||optional |N/A | | | |
+|merchant.terminals.allowedOperations.tips|boolean|5||optional | N/A| | | |
+|merchant.terminals.allowedOperations.standardFunction||boolean|5|N/A | | | | |
+|merchant.terminals.allowedOperations.refund|boolean|5||optional |N/A | | | |
+|merchant.terminals.allowedOperations.preAuthorization|boolean|5||N/A | | | | |
+|merchant.terminals.allowedOperations.keyEntry|boolean|5||optional | N/A| | | |
+|merchant.terminals.allowedOperations.cashAdvance|boolean|5||optional |N/A | | | |
 |**merchant.user**|object|N/A||N/A | | | | |
-|merchant.user.firstName|alphanumeric|100||N/A | | | | |
-|merchant.user.lastName|alphanumeric|100||N/A | | | | |
-|merchant.user.email|alphanumeric|256||N/A | | | | |
+|merchant.user.firstName|alphanumeric|100||N/A |N/A | | | |
+|merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
+|merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU1NjEyNTgyLDUzMTM1NTg0Niw5NzgwMT
-IxMDksLTIwODk0NTc2OCwtMTE0MzEwMzIyLDE5MzU4MjQwMTgs
-NjY4NzI2NDc4XX0=
+eyJoaXN0b3J5IjpbLTE4OTk3NzIzNCw1MzEzNTU4NDYsOTc4MD
+EyMTA5LC0yMDg5NDU3NjgsLTExNDMxMDMyMiwxOTM1ODI0MDE4
+LDY2ODcyNjQ3OF19
 -->
