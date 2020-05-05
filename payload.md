@@ -58,15 +58,15 @@ This document's target is to define all payload parameters in the different requ
 |merchant.configurations.fees.reOccurrenceFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |N/A| | | |
 |merchant.configurations.fees.feeValue|numeric|10||mandatory |N/A| | | |
 |**merchant.services**|object[]|N/A||optional | N/A| | | |
-|merchant.services.serviceType|alphabetic|15|DCC, RENTAL, MC_3D_SECURE|mandatory |optional | | | |
-|merchant.services.dccProvider|alphabetic|2|PP, FX|mandatory in case of serviceType is DCC |optional | | | |
-|merchant.services.dccSettlementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory in case of serviceType is DCC |optional | | | |
-|merchant.services.daysOfMonth|numeric|2||mandatory in case of serviceType is DCC |optional | | | |
-|merchant.services.dccAcquirerRate|numeric|10||mandatory in case of serviceType is DCC |optional | | | |
-|merchant.services.dccMerchantMarkupRate|numeric|10||mandatory in case of serviceType is DCC |optional | | | |
-|merchant.services.dccMarkupRate|numeric|10||mandatory in case of serviceType is 'DCC' |optional | | | |
-|merchant.services.rentalModeCode|alphabetic|10|CASH, CHEQUE|mandatory in case of serviceType is 'RENTAL' |optional | | | |
-|merchant.services.rentalModeName|alphabetic|10||mandatory in case of serviceType is 'RENTAL' |optional | | | |
+|merchant.services.serviceType|alphabetic|15|DCC, RENTAL, MC_3D_SECURE|mandatory |N/A | | | |
+|merchant.services.dccProvider|alphabetic|2|PP, FX|mandatory in case of serviceType is DCC |N/A | | | |
+|merchant.services.dccSettlementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory in case of serviceType is DCC |N/A | | | |
+|merchant.services.daysOfMonth|numeric|2||mandatory in case of serviceType is DCC |N/A | | | |
+|merchant.services.dccAcquirerRate|numeric|10||mandatory in case of serviceType is DCC |N/A | | | |
+|merchant.services.dccMerchantMarkupRate|numeric|10||mandatory in case of serviceType is DCC |N/A | | | |
+|merchant.services.dccMarkupRate|numeric|10||mandatory in case of serviceType is 'DCC' |N/A | | | |
+|merchant.services.rentalModeCode|alphabetic|10|CASH, CHEQUE|mandatory in case of serviceType is 'RENTAL' |N/A| | | |
+|merchant.services.rentalModeName|alphabetic|10||mandatory in case of serviceType is 'RENTAL' |N/A| | | |
 |**merchant.terminals**|object[]|N/A||optional |optional | | | |
 |merchant.terminals.terminalId|alphanumeric|25||mandatory |mandatory | | | |
 |merchant.terminals.terminalType|alphanumeric|10||mandatory | optional| | | |
@@ -74,8 +74,8 @@ This document's target is to define all payload parameters in the different requ
 |merchant.terminals.terminalModel|alphanumeric|25||mandatory | optional| | | |
 |merchant.terminals.communicationMethod|alphanumeric|10|SG,  GPRS_SIM|mandatory |optional | | | |
 |merchant.terminals.dccEnabled|boolean|5||mandatory | optional| | | |
-|**merchant.terminals.fees**|object[]|N/A||mandatory | optional| | | |
-|merchant.terminals.fees.feeType|alphabetic|25|SIM_FEE,  GPRS_FEE,  TERMINAL_RENTAL_FEE,  INS_FEE|mandatory |optional | | | |
+|**merchant.terminals.fees**|object[]|N/A||mandatory | N/A| | | |
+|merchant.terminals.fees.feeType|alphabetic|25|SIM_FEE,  GPRS_FEE,  TERMINAL_RENTAL_FEE,  INS_FEE|mandatory |N/A | | | |
 |merchant.terminals.fees.feeValue|numeric|10||mandatory | optional| | | |
 |**merchant.terminals.allowedOperations**|object|N/A||optional |optional | | | |
 |merchant.terminals.allowedOperations.tips|boolean|5||optional | optional| | | |
@@ -89,7 +89,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgwNTcwOTcyLDUzMTM1NTg0Niw5NzgwMT
+eyJoaXN0b3J5IjpbNTU1NjEyNTgyLDUzMTM1NTg0Niw5NzgwMT
 IxMDksLTIwODk0NTc2OCwtMTE0MzEwMzIyLDE5MzU4MjQwMTgs
 NjY4NzI2NDc4XX0=
 -->
