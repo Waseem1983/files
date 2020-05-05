@@ -11,16 +11,16 @@ This document's target is to define all payload parameters in the different requ
 |chain.groupCode| alphabetic  | 10|AFG,  ALIMIGS, ASECYBS, ASEMIGS, ATG, BRLADP, DARADP, DDF, DET, DTR, EAM, ECMMIGS, EHMMIGS, EHSADP, ETI, ETS, FLD, FLN, JMB, JUM, KSA, MTOMOTO, OTH, RLG, ROTADP, RTA, SDG, TRNADP, TRNCYBS, TRNMIGS, TRNMOTO, TRNMPOS, TRNPOS, TRNSABR| mandatory| optional| | | | |
 |chain.chainLevelReportRequired| boolean |5 || mandatory|optional | | | | |
 |chain.groupLevelReportingRequired| boolean | 5||mandatory |optional | | | | |
-|**merchant**  |object[]  |N/A ||mandatory | | | | | |
-|merchant.merchantId  |alphanumeric|25 ||mandatory | | | | |
-|merchant.merchantName|alphanumeric|100||mandatory | | | | |
-|merchant.legalName|alphanumeric|100 ||mandatory | | | | |
-|merchant.merchantType|alphanumeric|4||mandatory | | | | |
-|merchant.mcc|numeric|5||mandatory | | | | |
-|merchant.debitAccountNumOrIban|alphanumeric|25 ||mandatory | | | | |
-|merchant.creditAccountNumOrIban|alphanumeric|25 ||mandatory | | | | |
-|merchant.merchantCurrency|alphabetic|4 ||mandatory | | | | |
-|merchant.statementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory | | | | |
+|**merchant**  |object[]  |N/A ||mandatory | mandatory| | | | |
+|merchant.merchantId  |alphanumeric|25 ||mandatory |mandatory | | | |
+|merchant.merchantName|alphanumeric|100||mandatory | mandatory| | | |
+|merchant.legalName|alphanumeric|100 ||mandatory | optional| | | |
+|merchant.merchantType|alphanumeric|4||mandatory |mandatory | | | |
+|merchant.mcc|numeric|5||mandatory |mandatory | | | |
+|merchant.debitAccountNumOrIban|alphanumeric|25 ||mandatory | optional| | | |
+|merchant.creditAccountNumOrIban|alphanumeric|25 ||mandatory |optional | | | |
+|merchant.merchantCurrency|alphabetic|4 ||mandatory | mandatory| | | |
+|merchant.statementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |optional | | | |
 |merchant.statementDeliveryType|alphabetic|5|Email, Fax|mandatory | | | | |
 |merchant.paymentMode|alphabetic|3|EFT, EQ, FN, IFT, MC, NN, OB, TT |mandatory | | | | |
 |merchant.kyc|boolean|5 ||mandatory | | | | |
@@ -90,5 +90,5 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NzM3MzI5LDE4NDg3MTc1MjJdfQ==
+eyJoaXN0b3J5IjpbLTEzMjM1ODU0NjEsMTg0ODcxNzUyMl19
 -->
