@@ -6,11 +6,11 @@ This document's target is to define all payload parameters in the different requ
 |--|--|--|--|--|--|--|--|--|
 |**applications**| object[] |N/A ||mandatory|mandatory | | | | |
 |**chain**| object |N/A ||optional|optional | | | | |
-|chain.chainId| alphanumeric | 25|| mandatory| | | | | |
-|chain.chainName| alphanumeric  | 100|| mandatory| | | | | |
-|chain.groupCode| alphabetic  | 10|AFG,  ALIMIGS, ASECYBS, ASEMIGS, ATG, BRLADP, DARADP, DDF, DET, DTR, EAM, ECMMIGS, EHMMIGS, EHSADP, ETI, ETS, FLD, FLN, JMB, JUM, KSA, MTOMOTO, OTH, RLG, ROTADP, RTA, SDG, TRNADP, TRNCYBS, TRNMIGS, TRNMOTO, TRNMPOS, TRNPOS, TRNSABR| mandatory| | | | | |
-|chain.chainLevelReportRequired| boolean |5 || mandatory| | | | | |
-|chain.groupLevelReportingRequired| boolean | 5||mandatory | | | | | |
+|chain.chainId| alphanumeric | 25|| mandatory|optional | | | | |
+|chain.chainName| alphanumeric  | 100|| mandatory| optional| | | | |
+|chain.groupCode| alphabetic  | 10|AFG,  ALIMIGS, ASECYBS, ASEMIGS, ATG, BRLADP, DARADP, DDF, DET, DTR, EAM, ECMMIGS, EHMMIGS, EHSADP, ETI, ETS, FLD, FLN, JMB, JUM, KSA, MTOMOTO, OTH, RLG, ROTADP, RTA, SDG, TRNADP, TRNCYBS, TRNMIGS, TRNMOTO, TRNMPOS, TRNPOS, TRNSABR| mandatory| optional| | | | |
+|chain.chainLevelReportRequired| boolean |5 || mandatory|optional | | | | |
+|chain.groupLevelReportingRequired| boolean | 5||mandatory |optional | | | | |
 |**merchant**  |object[]  |N/A ||mandatory | | | | | |
 |merchant.merchantId  |alphanumeric|25 ||mandatory | | | | |
 |merchant.merchantName|alphanumeric|100||mandatory | | | | |
@@ -90,5 +90,5 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMzQwNjAzMywxODQ4NzE3NTIyXX0=
+eyJoaXN0b3J5IjpbLTk5NzM3MzI5LDE4NDg3MTc1MjJdfQ==
 -->
