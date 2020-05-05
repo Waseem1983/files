@@ -52,15 +52,15 @@ This document's target is to define all payload parameters in the different requ
 |merchant.configurations.acceptedCardSchemes.acceptedCardModes.rate|numeric|10||mandatory |optional | | | |
 |**merchant.configurations.acceptedCardSchemes.schemeOverrideValue**|object|N/A||mandatory in case overrideDefaultSchemesMcc is true| optional| | | |
 |merchant.configurations.acceptedCardSchemes.schemeOverrideValue.mcc|numeric|5||mandatory|optional | | | |
-|merchant.configurations.acceptedCardSchemes.schemeOverrideValue.dbaName|alphanumeric|100||mandatory|op | | | |
-|**merchant.configurations.fees**|object[]|N/A||mandatory | | | | |
-|merchant.configurations.fees.feeTypeName|alphabetic|15|MIS, ACQ_MMBR_FEE, MFEE_STRT, MFEE_FRD_HND, FRAUD_HAND_FEE, TRANS_FEE, REFUND_FEE|mandatory | | | | |
-|merchant.configurations.fees.reOccurrenceFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory | | | | |
-|merchant.configurations.fees.feeValue|numeric|10||mandatory | | | | |
-|**merchant.services**|object[]|N/A||optional | | | | |
-|merchant.services.serviceType|alphabetic|15|DCC, RENTAL, MC_3D_SECURE|mandatory | | | | |
-|merchant.services.dccProvider|alphabetic|2|PP, FX|mandatory in case of serviceType is DCC | | | | |
-|merchant.services.dccSettlementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory in case of serviceType is DCC | | | | |
+|merchant.configurations.acceptedCardSchemes.schemeOverrideValue.dbaName|alphanumeric|100||mandatory|optional | | | |
+|**merchant.configurations.fees**|object[]|N/A||mandatory | optional| | | |
+|merchant.configurations.fees.feeTypeName|alphabetic|15|MIS, ACQ_MMBR_FEE, MFEE_STRT, MFEE_FRD_HND, FRAUD_HAND_FEE, TRANS_FEE, REFUND_FEE|mandatory | optional| | | |
+|merchant.configurations.fees.reOccurrenceFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |optional | | | |
+|merchant.configurations.fees.feeValue|numeric|10||mandatory |optional | | | |
+|**merchant.services**|object[]|N/A||optional | optional| | | |
+|merchant.services.serviceType|alphabetic|15|DCC, RENTAL, MC_3D_SECURE|mandatory |optional | | | |
+|merchant.services.dccProvider|alphabetic|2|PP, FX|mandatory in case of serviceType is DCC |optional | | | |
+|merchant.services.dccSettlementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory in case of serviceType is DCC |optional | | | |
 |merchant.services.daysOfMonth|numeric|2||mandatory in case of serviceType is DCC | | | | |
 |merchant.services.dccAcquirerRate|numeric|10||mandatory in case of serviceType is DCC | | | | |
 |merchant.services.dccMerchantMarkupRate|numeric|10||mandatory in case of serviceType is DCC | | | | |
@@ -89,6 +89,6 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMjQyNjM0OCwtMjA4OTQ1NzY4LDE5Mz
-U4MjQwMTgsMTg0ODcxNzUyMl19
+eyJoaXN0b3J5IjpbLTE4NTg3NzI5MzksLTIwODk0NTc2OCwxOT
+M1ODI0MDE4LDE4NDg3MTc1MjJdfQ==
 -->
