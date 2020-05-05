@@ -4,8 +4,8 @@ This document's target is to define all payload parameters in the different requ
 #### ONBOARDING
 | **field** | **Type** |**length**|**possible values**|**Way4**	|**Base24**|**Self-Services**|**MC-3D**|**Payload**
 |--|--|--|--|--|--|--|--|--|
-|**applications**| object[] |N/A ||mandatory| | | | | |
-|**chain**| object |N/A ||optional| | | | | |
+|**applications**| object[] |N/A ||mandatory|mandatory | | | | |
+|**chain**| object |N/A ||optional|optional | | | | |
 |chain.chainId| alphanumeric | 25|| mandatory| | | | | |
 |chain.chainName| alphanumeric  | 100|| mandatory| | | | | |
 |chain.groupCode| alphabetic  | 10|AFG,  ALIMIGS, ASECYBS, ASEMIGS, ATG, BRLADP, DARADP, DDF, DET, DTR, EAM, ECMMIGS, EHMMIGS, EHSADP, ETI, ETS, FLD, FLN, JMB, JUM, KSA, MTOMOTO, OTH, RLG, ROTADP, RTA, SDG, TRNADP, TRNCYBS, TRNMIGS, TRNMOTO, TRNMPOS, TRNPOS, TRNSABR| mandatory| | | | | |
@@ -90,5 +90,5 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY4NzI2NDc4LDE4NDg3MTc1MjJdfQ==
+eyJoaXN0b3J5IjpbLTYyMzQwNjAzMyw2Njg3MjY0NzhdfQ==
 -->
