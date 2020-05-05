@@ -49,15 +49,15 @@ This document's target is to define all payload parameters in the different requ
 |merchant.configurations.acceptedCardSchemes.tariffRate|numeric|10||mandatory in case of simple pricing merchants | optional| | | |
 |**merchant.configurations.acceptedCardSchemes.acceptedCardModes**|object[]|N/A||mandatory in case of complex pricing merchants |N/A | | | |
 |merchant.configurations.acceptedCardSchemes.acceptedCardModes.modeName|alphabetic|15|ELECTRONIC, MANUAL, INTERNATIONAL, DOMESTIC, PREMIUM|mandatory |N/A | | | |
-|merchant.configurations.acceptedCardSchemes.acceptedCardModes.rate|numeric|10||mandatory |N | | | |
-|**merchant.configurations.acceptedCardSchemes.schemeOverrideValue**|object|N/A||mandatory in case overrideDefaultSchemesMcc is true| optional| | | |
-|merchant.configurations.acceptedCardSchemes.schemeOverrideValue.mcc|numeric|5||mandatory|optional | | | |
-|merchant.configurations.acceptedCardSchemes.schemeOverrideValue.dbaName|alphanumeric|100||mandatory|optional | | | |
-|**merchant.configurations.fees**|object[]|N/A||mandatory | optional| | | |
-|merchant.configurations.fees.feeTypeName|alphabetic|15|MIS, ACQ_MMBR_FEE, MFEE_STRT, MFEE_FRD_HND, FRAUD_HAND_FEE, TRANS_FEE, REFUND_FEE|mandatory | optional| | | |
-|merchant.configurations.fees.reOccurrenceFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |optional | | | |
-|merchant.configurations.fees.feeValue|numeric|10||mandatory |optional | | | |
-|**merchant.services**|object[]|N/A||optional | optional| | | |
+|merchant.configurations.acceptedCardSchemes.acceptedCardModes.rate|numeric|10||mandatory |N/A | | | |
+|**merchant.configurations.acceptedCardSchemes.schemeOverrideValue**|object|N/A||mandatory in case overrideDefaultSchemesMcc is true| N/A| | | |
+|merchant.configurations.acceptedCardSchemes.schemeOverrideValue.mcc|numeric|5||mandatory|N/A | | | |
+|merchant.configurations.acceptedCardSchemes.schemeOverrideValue.dbaName|alphanumeric|100||mandatory|N/A | | | |
+|**merchant.configurations.fees**|object[]|N/A||mandatory | N/A| | | |
+|merchant.configurations.fees.feeTypeName|alphabetic|15|MIS, ACQ_MMBR_FEE, MFEE_STRT, MFEE_FRD_HND, FRAUD_HAND_FEE, TRANS_FEE, REFUND_FEE|mandatory | N/A| | | |
+|merchant.configurations.fees.reOccurrenceFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |N/A| | | |
+|merchant.configurations.fees.feeValue|numeric|10||mandatory |N/A| | | |
+|**merchant.services**|object[]|N/A||optional | N/A| | | |
 |merchant.services.serviceType|alphabetic|15|DCC, RENTAL, MC_3D_SECURE|mandatory |optional | | | |
 |merchant.services.dccProvider|alphabetic|2|PP, FX|mandatory in case of serviceType is DCC |optional | | | |
 |merchant.services.dccSettlementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory in case of serviceType is DCC |optional | | | |
@@ -89,6 +89,6 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4ODMxOTQ4OCw1MzEzNTU4NDYsLTIwOD
-k0NTc2OCwxOTM1ODI0MDE4LDE4NDg3MTc1MjJdfQ==
+eyJoaXN0b3J5IjpbNDgwNTcwOTcyLDUzMTM1NTg0NiwtMjA4OT
+Q1NzY4LDE5MzU4MjQwMTgsMTg0ODcxNzUyMl19
 -->
