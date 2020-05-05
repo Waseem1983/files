@@ -45,14 +45,14 @@ This document's target is to define all payload parameters in the different requ
 |merchant.configurations.commissionSettlement|alphabetic|15|NEXT_STTLM,  M1|mandatory |optional | | | |
 |merchant.configurations.refundControlValue|alphabetic|1|G, R, C, N|mandatory |optional | | | |
 |**merchant.configurations.acceptedCardSchemes**|object[]|N/A||mandatory | mandatory| | | |
-|merchant.configurations.acceptedCardSchemes.cardScheme|alphabetic|4|VISA, MC, PL, JCB, CUP, MER, DCI, AMEX, TBOD, DODB, DOCR, DOHY, SBOC, SBOD, DOPR|mandatory | mand| | | |
-|merchant.configurations.acceptedCardSchemes.tariffRate|numeric|10||mandatory in case of simple pricing merchants | | | | |
-|**merchant.configurations.acceptedCardSchemes.acceptedCardModes**|object[]|N/A||mandatory in case of complex pricing merchants | | | | |
-|merchant.configurations.acceptedCardSchemes.acceptedCardModes.modeName|alphabetic|15|ELECTRONIC, MANUAL, INTERNATIONAL, DOMESTIC, PREMIUM|mandatory | | | | |
-|merchant.configurations.acceptedCardSchemes.acceptedCardModes.rate|numeric|10||mandatory | | | | |
-|**merchant.configurations.acceptedCardSchemes.schemeOverrideValue**|object|N/A||mandatory in case overrideDefaultSchemesMcc is true| | | | |
-|merchant.configurations.acceptedCardSchemes.schemeOverrideValue.mcc|numeric|5||mandatory| | | | |
-|merchant.configurations.acceptedCardSchemes.schemeOverrideValue.dbaName|alphanumeric|100||mandatory| | | | |
+|merchant.configurations.acceptedCardSchemes.cardScheme|alphabetic|4|VISA, MC, PL, JCB, CUP, MER, DCI, AMEX, TBOD, DODB, DOCR, DOHY, SBOC, SBOD, DOPR|mandatory | mandatory| | | |
+|merchant.configurations.acceptedCardSchemes.tariffRate|numeric|10||mandatory in case of simple pricing merchants | optional| | | |
+|**merchant.configurations.acceptedCardSchemes.acceptedCardModes**|object[]|N/A||mandatory in case of complex pricing merchants |optional | | | |
+|merchant.configurations.acceptedCardSchemes.acceptedCardModes.modeName|alphabetic|15|ELECTRONIC, MANUAL, INTERNATIONAL, DOMESTIC, PREMIUM|mandatory |optional | | | |
+|merchant.configurations.acceptedCardSchemes.acceptedCardModes.rate|numeric|10||mandatory |optional | | | |
+|**merchant.configurations.acceptedCardSchemes.schemeOverrideValue**|object|N/A||mandatory in case overrideDefaultSchemesMcc is true| optional| | | |
+|merchant.configurations.acceptedCardSchemes.schemeOverrideValue.mcc|numeric|5||mandatory|optional | | | |
+|merchant.configurations.acceptedCardSchemes.schemeOverrideValue.dbaName|alphanumeric|100||mandatory|op | | | |
 |**merchant.configurations.fees**|object[]|N/A||mandatory | | | | |
 |merchant.configurations.fees.feeTypeName|alphabetic|15|MIS, ACQ_MMBR_FEE, MFEE_STRT, MFEE_FRD_HND, FRAUD_HAND_FEE, TRANS_FEE, REFUND_FEE|mandatory | | | | |
 |merchant.configurations.fees.reOccurrenceFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory | | | | |
@@ -89,6 +89,6 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2ODk5OTc0MiwtMjA4OTQ1NzY4LDE5Mz
+eyJoaXN0b3J5IjpbLTYyMjQyNjM0OCwtMjA4OTQ1NzY4LDE5Mz
 U4MjQwMTgsMTg0ODcxNzUyMl19
 -->
