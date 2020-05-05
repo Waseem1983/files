@@ -29,10 +29,10 @@ This document's target is to define all payload parameters in the different requ
 |merchant.fundSettlementLevel|alphabetic|1 |O, U|optional |optional | | | |
 |merchant.legalType|alphanumeric|25 |LLC, SOLE_PROPRIETOR, PARTNERSHIP, FREE_ZONE|optional |optional | | | |
 |**merchant.addresses**|object[]|N/A ||mandatory | mandatory | | | |
-|merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory || | | ||merchant.addresses.name |alphanumeric|100 ||mandatory | | | | |
-|merchant.addresses.countryCode|alphabetic|4 ||mandatory | | | | |
-|merchant.addresses.state|alphabetic|100 ||optional | | | | |
-|merchant.addresses.city|alphabetic|100 ||mandatory | | | | |
+|merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory |mandatory| | | ||merchant.addresses.name |alphanumeric|100 ||mandatory |mandatory | | | |
+|merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory | | | |
+|merchant.addresses.state|alphabetic|100 ||optional | mandatory| | | |
+|merchant.addresses.city|alphabetic|100 ||mandatory | mandatory| | | |
 |merchant.addresses.phone|numeric|25 ||optional | | | | |
 |merchant.addresses.postalCode|numeric|25 ||mandatory | | | | |
 |merchant.addresses.pobox|numeric|25 ||optional | | | | |
@@ -89,6 +89,6 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODk0NTc2OCwxOTM1ODI0MDE4LDE4ND
-g3MTc1MjJdfQ==
+eyJoaXN0b3J5IjpbLTE2NDE4OTQyMywtMjA4OTQ1NzY4LDE5Mz
+U4MjQwMTgsMTg0ODcxNzUyMl19
 -->
