@@ -21,14 +21,14 @@ This document's target is to define all payload parameters in the different requ
 |merchant.creditAccountNumOrIban|alphanumeric|25 ||mandatory |optional | | | |
 |merchant.merchantCurrency|alphabetic|4 ||mandatory | mandatory| | | |
 |merchant.statementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |optional | | | |
-|merchant.statementDeliveryType|alphabetic|5|Email, Fax|mandatory | | | | |
-|merchant.paymentMode|alphabetic|3|EFT, EQ, FN, IFT, MC, NN, OB, TT |mandatory | | | | |
-|merchant.kyc|boolean|5 ||mandatory | | | | |
-|merchant.statementDay|numeric|2 ||mandatory | | | | |
-|merchant.trn|alphanumeric|15 ||mandatory | | | | |
-|merchant.fundSettlementLevel|alphabetic|1 |O, U|optional | | | | |
-|merchant.legalType|alphanumeric|25 |LLC, SOLE_PROPRIETOR, PARTNERSHIP, FREE_ZONE|optional | | | | |
-|**merchant.addresses**|object[]|N/A ||mandatory | | | | |
+|merchant.statementDeliveryType|alphabetic|5|Email, Fax|mandatory | optional| | | |
+|merchant.paymentMode|alphabetic|3|EFT, EQ, FN, IFT, MC, NN, OB, TT |mandatory |optional | | | |
+|merchant.kyc|boolean|5 ||mandatory | optional| | | |
+|merchant.statementDay|numeric|2 ||mandatory |optional | | | |
+|merchant.trn|alphanumeric|15 ||mandatory | optional| | | |
+|merchant.fundSettlementLevel|alphabetic|1 |O, U|optional |optional | | | |
+|merchant.legalType|alphanumeric|25 |LLC, SOLE_PROPRIETOR, PARTNERSHIP, FREE_ZONE|optional |optional | | | |
+|**merchant.addresses**|object[]|N/A ||mandatory |mandatory| | | |
 |merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory | | | | |
 |merchant.addresses.name |alphanumeric|100 ||mandatory | | | | |
 |merchant.addresses.countryCode|alphabetic|4 ||mandatory | | | | |
@@ -90,5 +90,5 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjM1ODU0NjEsMTg0ODcxNzUyMl19
+eyJoaXN0b3J5IjpbMTkzNTgyNDAxOCwxODQ4NzE3NTIyXX0=
 -->
