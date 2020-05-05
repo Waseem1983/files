@@ -80,16 +80,16 @@ This document's target is to define all payload parameters in the different requ
 |**merchant.terminals.allowedOperations**|object|N/A||optional |optional | | | |
 |merchant.terminals.allowedOperations.tips|boolean|5||optional | optional| | | |
 |merchant.terminals.allowedOperations.standardFunction||boolean|5|optional | | | | |
-|merchant.terminals.allowedOperations.refund|boolean|5||optional | | | | |
+|merchant.terminals.allowedOperations.refund|boolean|5||optional |optional | | | |
 |merchant.terminals.allowedOperations.preAuthorization|boolean|5||optional | | | | |
-|merchant.terminals.allowedOperations.keyEntry|boolean|5||optional | | | | |
-|merchant.terminals.allowedOperations.cashAdvance|boolean|5||optional | | | | |
+|merchant.terminals.allowedOperations.keyEntry|boolean|5||optional | optional| | | |
+|merchant.terminals.allowedOperations.cashAdvance|boolean|5||optional |optional | | | |
 |**merchant.user**|object|N/A||N/A | | | | |
 |merchant.user.firstName|alphanumeric|100||N/A | | | | |
 |merchant.user.lastName|alphanumeric|100||N/A | | | | |
 |merchant.user.email|alphanumeric|256||N/A | | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTU5NTAzNCw5NzgwMTIxMDksLTIwOD
-k0NTc2OCwtMTE0MzEwMzIyLDE5MzU4MjQwMTgsNjY4NzI2NDc4
-XX0=
+eyJoaXN0b3J5IjpbNTMxMzU1ODQ2LDk3ODAxMjEwOSwtMjA4OT
+Q1NzY4LC0xMTQzMTAzMjIsMTkzNTgyNDAxOCw2Njg3MjY0Nzhd
+fQ==
 -->
