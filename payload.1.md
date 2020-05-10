@@ -5,20 +5,20 @@ This document's target is to define all payload parameters in the different requ
 | **field** | **Type** |**length**|**possible values**|**Way4**	|**Base24**|**Self-Services**|**MC-3D**|**Payload**
 |--|--|--|--|--|--|--|--|--|
 |**applications**| object[] |N/A ||mandatory|mandatory | | | | |
-|**chain**| object |N/A ||optional|optional | | | | |
-|chain.chainId| alphanumeric | 25|| mandatory|optional | | | | |
-|chain.chainName| alphanumeric  | 100|| mandatory| optional| | | | |
+|**chain**| object |N/A ||optional|N/A | | | | |
+|chain.chainId| alphanumeric | 25|| mandatory|N/A | | | | |
+|chain.chainName| alphanumeric  | 100|| mandatory| N/A| | | | |
 |chain.groupCode| alphabetic  | 10|AFG,  ALIMIGS, ASECYBS, ASEMIGS, ATG, BRLADP, DARADP, DDF, DET, DTR, EAM, ECMMIGS, EHMMIGS, EHSADP, ETI, ETS, FLD, FLN, JMB, JUM, KSA, MTOMOTO, OTH, RLG, ROTADP, RTA, SDG, TRNADP, TRNCYBS, TRNMIGS, TRNMOTO, TRNMPOS, TRNPOS, TRNSABR| mandatory| optional| | | | |
-|chain.chainLevelReportRequired| boolean |5 || mandatory|optional | | | | |
-|chain.groupLevelReportingRequired| boolean | 5||mandatory |optional | | | | |
+|chain.chainLevelReportRequired| boolean |5 || mandatory|N/A | | | | |
+|chain.groupLevelReportingRequired| boolean | 5||mandatory |N/A | | | | |
 |**merchant**  |object[]  |N/A ||mandatory | mandatory| | | | |
 |merchant.merchantId  |alphanumeric|25 ||mandatory |mandatory | | | |
 |merchant.merchantName|alphanumeric|100||mandatory | mandatory| | | |
 |merchant.legalName|alphanumeric|100 ||mandatory | optional| | | |
 |merchant.merchantType|alphanumeric|4||mandatory |mandatory | | | |
 |merchant.mcc|numeric|5||mandatory |mandatory | | | |
-|merchant.debitAccountNumOrIban|alphanumeric|25 ||mandatory | optional| | | |
-|merchant.creditAccountNumOrIban|alphanumeric|25 ||mandatory |optional | | | |
+|merchant.debitAccountNumOrIban|alphanumeric|25 ||mandatory | N/A| | | |
+|merchant.creditAccountNumOrIban|alphanumeric|25 ||mandatory |N/A | | | |
 |merchant.merchantCurrency|alphabetic|4 ||mandatory | mandatory| | | |
 |merchant.statementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |optional | | | |
 |merchant.statementDeliveryType|alphabetic|5|Email, Fax|mandatory | optional| | | |
@@ -89,7 +89,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMzg5MTI2NiwtMTg5OTc3MjM0LDUzMT
-M1NTg0NiwtMjA4OTQ1NzY4LDE5MzU4MjQwMTgsMTg0ODcxNzUy
-Ml19
+eyJoaXN0b3J5IjpbMzYzMDk0NTcyLC04MDM4OTEyNjYsLTE4OT
+k3NzIzNCw1MzEzNTU4NDYsLTIwODk0NTc2OCwxOTM1ODI0MDE4
+LDE4NDg3MTc1MjJdfQ==
 -->
