@@ -28,9 +28,9 @@ This document's target is to define all payload parameters in the different requ
 |merchant.trn|alphanumeric|15 ||mandatory | N/A| | | |
 |merchant.fundSettlementLevel|alphabetic|1 |O, U|optional |N/A| | | |
 |merchant.legalType|alphanumeric|25 |LLC, SOLE_PROPRIETOR, PARTNERSHIP, FREE_ZONE|optional |N/A| | | |
-|**merchant.addresses**|object[]|N/A ||mandatory |mandatory | | | |
+|**merchant.addresses**|object[]|N/A ||mandatory |mandatory | | |
 |merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory |mandatory | | |
-|merchant.addresses.name |alphanumeric|100 ||mandatory |N/A | | |
+|merchant.addresses.name |alphanumeric|100 ||mandatory|N/A| | | |
 |merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|| |  |
 |merchant.addresses.state|alphabetic|100 ||option | optional  | | |
 |merchant.addresses.city|alphabetic|100 ||mandatory | optional| | | |
@@ -40,7 +40,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.addresses.longitude|numeric|25 ||optional |N/A| | | |
 |merchant.addresses.latitude|numeric|25 ||optional |N/A | | | |
 |merchant.addresses.fax|numeric|25 ||optional |N/A | | | |
-|merchant.addresses.email|alphanumeric|256 ||mandatory|optional| | | |
+|merchant.addresses.email|alphanumeric|256 ||mandatory |optional| | | |
 |**merchant.configurations**|object|N/A||mandatory |mandatory | | | |
 |merchant.configurations.overrideDefaultSchemesMcc|boolean|5||optional |N/A | | | |
 |merchant.configurations.commissionSettlement|alphabetic|15|NEXT_STTLM,  M1|mandatory |N/A | | | |
@@ -50,7 +50,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.configurations.acceptedCardSchemes.tariffRate|numeric|10||mandatory in case of simple pricing merchants | N/A| | | |
 |**merchant.configurations.acceptedCardSchemes.acceptedCardModes**|object[]|N/A||mandatory in case of complex pricing merchants |N/A || | |
 |merchant.configurations.acceptedCardSchemes.acceptedCardModes.modeName|alphabetic|15|ELECTRONIC, MANUAL, INTERNATIONAL, DOMESTIC, PREMIUM|mandatory |N/A | | | |
-|merchant.configurations.acceptedCardSchemes.acceptedCardModes.rate|numeric|10||mandatory |N/A | | | |
+|merchant.configurations.acceptedCardSchemes.acceptedCardModes.rate|numeric|10|||N/A | | | |
 |**merchant.configurations.acceptedCardSchemes.schemeOverrideValue**|object|N/A||mandatory in case overrideDefaultSchemesMcc is true| N/A| | | |
 |merchant.configurations.acceptedCardSchemes.schemeOverrideValue.mcc|numeric|5||mandatory|N/A | | | |
 |merchant.configurations.acceptedCardSchemes.schemeOverrideValue.dbaName|alphanumeric|100||mandatory| | | | |
@@ -70,7 +70,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.services.rentalModeName|alphabetic|10||mandatory in case of serviceType is 'RENTAL' |N/A| | | |
 |**merchant.terminals**|object[]|N/A||optionalMandatory || | | |
 |merchant.terminals.terminalId|alphanumeric|25||mandatory |mandatory | | | |
-|merchant.terminals.terminalType|alphanumeric|10||mandatory |optional | | | |
+|merchant.terminals.terminalType|alphanumeric|10||mandatory || | | |
 |merchant.terminals.maker|alphanumeric|10||mandatory N/A| | | | |
 |merchant.terminals.terminalModel|alphanumeric|25||mandatory |N/A | | | |
 |merchant.terminals.communicationMethod|alphanumeric|10|SG,  GPRS_SIM|mandatory |N/A| | | |
@@ -90,7 +90,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NTA0NzUwNiwyMDkxMDAyMDUzLC04MD
+eyJoaXN0b3J5IjpbMTQyNjg0OTEwNywyMDkxMDAyMDUzLC04MD
 M4OTEyNjYsLTE4OTk3NzIzNCw1MzEzNTU4NDYsLTIwODk0NTc2
 OCwxOTM1ODI0MDE4LDE4NDg3MTc1MjJdfQ==
 -->
