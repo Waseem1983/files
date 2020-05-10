@@ -80,9 +80,9 @@ This document's target is to define all payload parameters in the different requ
 |merchant.terminals.fees.feeValue|numeric|10||mandatory | N/A| | | |
 |**merchant.terminals.allowedOperations**|object|N/A||optional |N/A | | | |
 |merchant.terminals.allowedOperations.tips|boolean|5||optional | N/A| | | |
-|merchant.terminals.allowedOperations.standardFunction||boolean|5|N/A | | | | |
-|merchant.terminals.allowedOperations.refund|boolean|5|| |N/A | | | |
-|merchant.terminals.allowedOperations.preAuthorization|boolean|5||N/Aoptional | | | | |
+|merchant.terminals.allowedOperations.standardFunction||boolean|N/A|N/A | | | | |
+|merchant.terminals.allowedOperations.refund|boolean|5|| |N/A |N/A | | |
+|merchant.terminals.allowedOperations.preAuthorization|boolean|5||N/A|N/A | | | | |
 |merchant.terminals.allowedOperations.keyEntry|boolean|5||optional | N/A| | | |
 |merchant.terminals.allowedOperations.cashAdvance|boolean|5||optional |N/A | | | |
 |**merchant.user**|object|N/A||N/A | | | | |
@@ -90,7 +90,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNjYyNDI5NCwyMDkxMDAyMDUzLC04MD
-M4OTEyNjYsLTE4OTk3NzIzNCw1MzEzNTU4NDYsLTIwODk0NTc2
-OCwxOTM1ODI0MDE4LDE4NDg3MTc1MjJdfQ==
+eyJoaXN0b3J5IjpbNTI5MDYzOTY1LDIwOTEwMDIwNTMsLTgwMz
+g5MTI2NiwtMTg5OTc3MjM0LDUzMTM1NTg0NiwtMjA4OTQ1NzY4
+LDE5MzU4MjQwMTgsMTg0ODcxNzUyMl19
 -->
