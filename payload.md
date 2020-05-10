@@ -53,7 +53,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.configurations.acceptedCardSchemes.acceptedCardModes.rate|numeric|10|||N/A | | | |
 |**merchant.configurations.acceptedCardSchemes.schemeOverrideValue**|object|N/A||mandatory in case overrideDefaultSchemesMcc is true| N/A| | | |
 |merchant.configurations.acceptedCardSchemes.schemeOverrideValue.mcc|numeric|5||mandatory|N/A | | | |
-|merchant.configurations.acceptedCardSchemes.schemeOverrideValue.dbaName|alphanumeric|100||mandatory| | | | |
+|merchant.configurations.acceptedCardSchemes.schemeOverrideValue.dbaName|alphanumeric|100||mandatory|N/A | | | |
 |**merchant.configurations.fees**|object[]|N/A||mandatory | N/A| | | |
 |merchant.configurations.fees.feeTypeName|alphabetic|15|MIS, ACQ_MMBR_FEE, MFEE_STRT, MFEE_FRD_HND, FRAUD_HAND_FEE, TRANS_FEE, REFUND_FEE|mandatory | N/A| | | |
 |merchant.configurations.fees.reOccurrenceFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |N/A| | | |
@@ -68,7 +68,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.services.dccMarkupRate|numeric|10||mandatory in case of serviceType is 'DCC' |N/A | | | |
 |merchant.services.rentalModeCode|alphabetic|10|CASH, CHEQUE|mandatory in case of serviceType is 'RENTAL' |N/A| | | |
 |merchant.services.rentalModeName|alphabetic|10||mandatory in case of serviceType is 'RENTAL' |N/A| | | |
-|**merchant.terminals**|object[]|N/A||optionalMandatory || | | |
+|**merchant.terminals**|object[]|N/A||optionalMandatory |Mandatory| | | |
 |merchant.terminals.terminalId|alphanumeric|25||mandatory |mandatory | | | |
 |merchant.terminals.terminalType|alphanumeric|10||mandatory || | | |
 |merchant.terminals.maker|alphanumeric|10||mandatory N/A| | | | |
@@ -90,9 +90,9 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNjg0OTEwNywtMjEzMjgwNTk4Myw1OT
-kwMjg1NSwyMDkxMDAyMDUzLC0xMjg0MjkzODcyLDkzODU2OTQy
-MCwtODAzODkxMjY2LC0xODk5NzcyMzQsNTMxMzU1ODQ2LDk3OD
-AxMjEwOSwtMjA4OTQ1NzY4LC0xMTQzMTAzMjIsMTkzNTgyNDAx
-OCw2Njg3MjY0NzhdfQ==
+eyJoaXN0b3J5IjpbLTE0NjM5MjA0MjIsLTIxMzI4MDU5ODMsNT
+k5MDI4NTUsMjA5MTAwMjA1MywtMTI4NDI5Mzg3Miw5Mzg1Njk0
+MjAsLTgwMzg5MTI2NiwtMTg5OTc3MjM0LDUzMTM1NTg0Niw5Nz
+gwMTIxMDksLTIwODk0NTc2OCwtMTE0MzEwMzIyLDE5MzU4MjQw
+MTgsNjY4NzI2NDc4XX0=
 -->
