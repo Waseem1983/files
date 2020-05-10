@@ -8,7 +8,7 @@ This document's target is to define all payload parameters in the different requ
 |**chain**| object |N/A ||optional|N/A | | | |
 |chain.chainId| alphanumeric | 25|| mandatory|N/A | | | | |
 |chain.chainName| alphanumeric  | 100|| mandatory| N/A| | | | |
-|chain.groupCode| alphabetic  | 10|AFG,  ALIMIGS, ASECYBS, ASEMIGS, ATG, BRLADP, DARADP, DDF, DET, DTR, EAM, ECMMIGS, EHMMIGS, EHSADP, ETI, ETS, FLD, FLN, JMB, JUM, KSA, MTOMOTO, OTH, RLG, ROTADP, RTA, SDG, TRNADP, TRNCYBS, TRNMIGS, TRNMOTO, TRNMPOS, TRNPOS, TRNSABR| mandatory| | | | | |
+|chain.groupCode| alphabetic  | 10|AFG,  ALIMIGS, ASECYBS, ASEMIGS, ATG, BRLADP, DARADP, DDF, DET, DTR, EAM, ECMMIGS, EHMMIGS, EHSADP, ETI, ETS, FLD, FLN, JMB, JUM, KSA, MTOMOTO, OTH, RLG, ROTADP, RTA, SDG, TRNADP, TRNCYBS, TRNMIGS, TRNMOTO, TRNMPOS, TRNPOS, TRNSABR| mandatory| N/A| | | | |
 |chain.chainLevelReportRequired| boolean |5 || mandatory|N/A | | | | |
 |chain.groupLevelReportingRequired| boolean | 5||mandatory |N/A | | | | |
 |**merchant**  |object[]  |N/A ||mandatory | mandatory| | | | |
@@ -19,11 +19,11 @@ This document's target is to define all payload parameters in the different requ
 |merchant.mcc|numeric|5||mandatory || | | |
 |merchant.debitAccountNumOrIban|alphanumeric|25 ||mandatory | N/A| | | |
 |merchant.creditAccountNumOrIban|alphanumeric|25 ||mandatory |N/A | | | |
-|merchant.merchantCurrency|alphabetic|4 ||mandatory | | | | |
+|merchant.merchantCurrency|alphabetic|4 ||mandatory |mandatory | | | |
 |merchant.statementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |N/A | | | |
 |merchant.statementDeliveryType|alphabetic|5|Email, Fax|mandatory | N/A| | | |
-|merchant.paymentMode|alphabetic|3|EFT, EQ, FN, IFT, MC, NN, OB, TT |mandatory || | | |
-|merchant.kyc|boolean|5 ||mandatory | | | | |
+|merchant.paymentMode|alphabetic|3|EFT, EQ, FN, IFT, MC, NN, OB, TT |mandatory |N/A| | | |
+|merchant.kyc|boolean|5 ||mandatory |N/A | | | |
 |merchant.statementDay|numeric|2 ||mandatory |N/A | | | |
 |merchant.trn|alphanumeric|15 ||mandatory | N/A| | | |
 |merchant.fundSettlementLevel|alphabetic|1 |O, U|optional |N/A| | | |
@@ -90,9 +90,9 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5Nzg2NzE4NSw1OTkwMjg1NSwyMDkxMD
-AyMDUzLC0xMjg0MjkzODcyLDkzODU2OTQyMCwtODAzODkxMjY2
-LC0xODk5NzcyMzQsNTMxMzU1ODQ2LDk3ODAxMjEwOSwtMjA4OT
-Q1NzY4LC0xMTQzMTAzMjIsMTkzNTgyNDAxOCw2Njg3MjY0Nzhd
-fQ==
+eyJoaXN0b3J5IjpbLTExNDEyNjEyMzAsNTk5MDI4NTUsMjA5MT
+AwMjA1MywtMTI4NDI5Mzg3Miw5Mzg1Njk0MjAsLTgwMzg5MTI2
+NiwtMTg5OTc3MjM0LDUzMTM1NTg0Niw5NzgwMTIxMDksLTIwOD
+k0NTc2OCwtMTE0MzEwMzIyLDE5MzU4MjQwMTgsNjY4NzI2NDc4
+XX0=
 -->
