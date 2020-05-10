@@ -5,7 +5,7 @@ This document's target is to define all payload parameters in the different requ
 | **field** | **Type** |**length**|**possible values**|**Way4**	|**Base24**|**Self-Services**|**MC-3D**|**Payload**
 |--|--|--|--|--|--|--|--|--|
 |**applications**| object[] |N/A ||mandatory|mandatory | | | | |
-|**chain**| object |N/A ||optional| | | | |
+|**chain**| object |N/A ||optional|N/A | | | |
 |chain.chainId| alphanumeric | 25|| mandatory|N/A | | | | |
 |chain.chainName| alphanumeric  | 100|| mandatory| N/A| | | | |
 |chain.groupCode| alphabetic  | 10|AFG,  ALIMIGS, ASECYBS, ASEMIGS, ATG, BRLADP, DARADP, DDF, DET, DTR, EAM, ECMMIGS, EHMMIGS, EHSADP, ETI, ETS, FLD, FLN, JMB, JUM, KSA, MTOMOTO, OTH, RLG, ROTADP, RTA, SDG, TRNADP, TRNCYBS, TRNMIGS, TRNMOTO, TRNMPOS, TRNPOS, TRNSABR| mandatory| | | | | |
@@ -90,7 +90,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODg0NDQ2NjcsNTk5MDI4NTUsMjA5MT
+eyJoaXN0b3J5IjpbLTIwNzU3NDU2MTksNTk5MDI4NTUsMjA5MT
 AwMjA1MywtMTI4NDI5Mzg3Miw5Mzg1Njk0MjAsLTgwMzg5MTI2
 NiwtMTg5OTc3MjM0LDUzMTM1NTg0Niw5NzgwMTIxMDksLTIwOD
 k0NTc2OCwtMTE0MzEwMzIyLDE5MzU4MjQwMTgsNjY4NzI2NDc4
