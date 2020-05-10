@@ -28,9 +28,9 @@ This document's target is to define all payload parameters in the different requ
 |merchant.trn|alphanumeric|15 ||mandatory | N/A| | | |
 |merchant.fundSettlementLevel|alphabetic|1 |O, U|optional |N/A| | | |
 |merchant.legalType|alphanumeric|25 |LLC, SOLE_PROPRIETOR, PARTNERSHIP, FREE_ZONE|optional |N/A| | | |
-|**merchant.addresses**|object[]|N/A ||mandatory | | | | |
-|merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory | | | |
-|merchant.addresses.name |alphanumeric|100 ||mandatory| | | |
+|**merchant.addresses**|object[]|N/A ||mandatory |mandatory | | |
+|merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory |mandatory | | |
+|merchant.addresses.name |alphanumeric|100 ||mandatory| |N/A | | |
 |merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|| |  |
 |merchant.addresses.state|alphabetic|100 ||option | optional  | | |
 |merchant.addresses.city|alphabetic|100 ||mandatory | optional| | | |
@@ -90,7 +90,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzI4MDU5ODMsLTExNDEyNjEyMzAsNT
+eyJoaXN0b3J5IjpbLTEzMTQ1NzkzNDMsLTIxMzI4MDU5ODMsNT
 k5MDI4NTUsMjA5MTAwMjA1MywtMTI4NDI5Mzg3Miw5Mzg1Njk0
 MjAsLTgwMzg5MTI2NiwtMTg5OTc3MjM0LDUzMTM1NTg0Niw5Nz
 gwMTIxMDksLTIwODk0NTc2OCwtMTE0MzEwMzIyLDE5MzU4MjQw
