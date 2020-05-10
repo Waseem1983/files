@@ -19,7 +19,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.mcc|numeric|5||mandatory || | | |
 |merchant.debitAccountNumOrIban|alphanumeric|25 ||mandatory | N/A| | | |
 |merchant.creditAccountNumOrIban|alphanumeric|25 ||mandatory |N/A | | | |
-|merchant.merchantCurrency|alphabetic|4 ||mandatory | | | | |
+|merchant.merchantCurrency|alphabetic|4 ||mandatory |mandatory | | | |
 |merchant.statementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |N/A | | | |
 |merchant.statementDeliveryType|alphabetic|5|Email, Fax|mandatory | N/A| | | |
 |merchant.paymentMode|alphabetic|3|EFT, EQ, FN, IFT, MC, NN, OB, TT |mandatory |N/A| | | |
@@ -28,9 +28,9 @@ This document's target is to define all payload parameters in the different requ
 |merchant.trn|alphanumeric|15 ||mandatory | N/A| | | |
 |merchant.fundSettlementLevel|alphabetic|1 |O, U|optional |N/A| | | |
 |merchant.legalType|alphanumeric|25 |LLC, SOLE_PROPRIETOR, PARTNERSHIP, FREE_ZONE|optional |N/A| | | |
-|**merchant.addresses**|object[]|N/A ||mandatory | | | | |
-|merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory | | | |
-|merchant.addresses.name |alphanumeric|100 ||mandatory | | | |
+|**merchant.addresses**|object[]|N/A ||mandatory |mandatory | | | |
+|merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory |mandatory | | |
+|merchant.addresses.name |alphanumeric|100 ||mandatory |N/A | | |
 |merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|| |  |
 |merchant.addresses.state|alphabetic|100 ||option | optional  | | |
 |merchant.addresses.city|alphabetic|100 ||mandatory | optional| | | |
@@ -90,7 +90,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMzUxNTksMjA5MTAwMjA1MywtODAzOD
-kxMjY2LC0xODk5NzcyMzQsNTMxMzU1ODQ2LC0yMDg5NDU3Njgs
-MTkzNTgyNDAxOCwxODQ4NzE3NTIyXX0=
+eyJoaXN0b3J5IjpbMTk5NTA0NzUwNiwyMDkxMDAyMDUzLC04MD
+M4OTEyNjYsLTE4OTk3NzIzNCw1MzEzNTU4NDYsLTIwODk0NTc2
+OCwxOTM1ODI0MDE4LDE4NDg3MTc1MjJdfQ==
 -->
