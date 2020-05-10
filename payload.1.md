@@ -70,8 +70,8 @@ This document's target is to define all payload parameters in the different requ
 |merchant.services.rentalModeName|alphabetic|10||mandatory in case of serviceType is 'RENTAL' |N/A| | | |
 |**merchant.terminals**|object[]|N/A||optionalMandatory |Mandatory| | | |
 |merchant.terminals.terminalId|alphanumeric|25||mandatory |mandatory | | | |
-|merchant.terminals.terminalType|alphanumeric|10||mandatory || | | |
-|merchant.terminals.maker|alphanumeric|10||mandatory N/A| | | | |
+|merchant.terminals.terminalType|alphanumeric|10||mandatory |N/A| | | |
+|merchant.terminals.maker|alphanumeric|10||mandatory |N/A| | | | |
 |merchant.terminals.terminalModel|alphanumeric|25||mandatory |N/A | | | |
 |merchant.terminals.communicationMethod|alphanumeric|10|SG,  GPRS_SIM|mandatory |N/A| | | |
 |merchant.terminals.dccEnabled|boolean|5||mandatory |N/A | | | |
@@ -90,7 +90,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjM5MjA0MjIsMjA5MTAwMjA1MywtOD
-AzODkxMjY2LC0xODk5NzcyMzQsNTMxMzU1ODQ2LC0yMDg5NDU3
-NjgsMTkzNTgyNDAxOCwxODQ4NzE3NTIyXX0=
+eyJoaXN0b3J5IjpbMTgxNjYyNDI5NCwyMDkxMDAyMDUzLC04MD
+M4OTEyNjYsLTE4OTk3NzIzNCw1MzEzNTU4NDYsLTIwODk0NTc2
+OCwxOTM1ODI0MDE4LDE4NDg3MTc1MjJdfQ==
 -->
