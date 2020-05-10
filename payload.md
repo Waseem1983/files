@@ -34,13 +34,13 @@ This document's target is to define all payload parameters in the different requ
 |merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|| |  |
 |merchant.addresses.state|alphabetic|100 ||option | optional  | | |
 |merchant.addresses.city|alphabetic|100 ||mandatory | optional| | | |
-|merchant.addresses.phone|numeric|25 ||optional |optional| | | |
+|merchant.addresses.phone|numeric|25 ||optional || | | |
 |merchant.addresses.postalCode|numeric|25 ||mandatory |optional| | | |
 |merchant.addresses.pobox|numeric|25 ||optional | optional|| | |
-|merchant.addresses.longitude|numeric|25 ||optional |N/A| | | |
+|merchant.addresses.longitude|numeric|25 ||optional || | | |
 |merchant.addresses.latitude|numeric|25 ||optional |N/A | | | |
 |merchant.addresses.fax|numeric|25 ||optional |N/A | | | |
-|merchant.addresses.email|alphanumeric|256 ||mandatory |optional | | | |
+|merchant.addresses.email|alphanumeric|256 ||mandatory || | | |
 |**merchant.configurations**|object|N/A||mandatory |mandatory | | | |
 |merchant.configurations.overrideDefaultSchemesMcc|boolean|5||optional |N/A | | | |
 |merchant.configurations.commissionSettlement|alphabetic|15|NEXT_STTLM,  M1|mandatory |N/A | | | |
@@ -48,7 +48,7 @@ This document's target is to define all payload parameters in the different requ
 |**merchant.configurations.acceptedCardSchemes**|object[]|N/A||mandatory |mandatory | | | |
 |merchant.configurations.acceptedCardSchemes.cardScheme|alphabetic|4|VISA, MC, PL, JCB, CUP, MER, DCI, AMEX, TBOD, DODB, DOCR, DOHY, SBOC, SBOD, DOPR|mandatory |mandatory | | | |
 |merchant.configurations.acceptedCardSchemes.tariffRate|numeric|10||mandatory in case of simple pricing merchants | N/A| | | |
-|**merchant.configurations.acceptedCardSchemes.acceptedCardModes**|object[]|N/A||mandatory in case of complex pricing merchants |N/A |N/A| | |
+|**merchant.configurations.acceptedCardSchemes.acceptedCardModes**|object[]|N/A||mandatory in case of complex pricing merchants |N/A || | |
 |merchant.configurations.acceptedCardSchemes.acceptedCardModes.modeName|alphabetic|15|ELECTRONIC, MANUAL, INTERNATIONAL, DOMESTIC, PREMIUM|mandatory |N/A | | | |
 |merchant.configurations.acceptedCardSchemes.acceptedCardModes.rate|numeric|10||mandatory |N/A | | | |
 |**merchant.configurations.acceptedCardSchemes.schemeOverrideValue**|object|N/A||mandatory in case overrideDefaultSchemesMcc is true| N/A| | | |
@@ -90,8 +90,8 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MTAwMjA1MywtMTI4NDI5Mzg3Miw5Mz
-g1Njk0MjAsLTgwMzg5MTI2NiwtMTg5OTc3MjM0LDUzMTM1NTg0
-Niw5NzgwMTIxMDksLTIwODk0NTc2OCwtMTE0MzEwMzIyLDE5Mz
-U4MjQwMTgsNjY4NzI2NDc4XX0=
+eyJoaXN0b3J5IjpbNTk5MDI4NTUsMjA5MTAwMjA1MywtMTI4ND
+I5Mzg3Miw5Mzg1Njk0MjAsLTgwMzg5MTI2NiwtMTg5OTc3MjM0
+LDUzMTM1NTg0Niw5NzgwMTIxMDksLTIwODk0NTc2OCwtMTE0Mz
+EwMzIyLDE5MzU4MjQwMTgsNjY4NzI2NDc4XX0=
 -->
