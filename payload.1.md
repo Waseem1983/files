@@ -27,12 +27,13 @@ This document's target is to define all payload parameters in the different requ
 |merchant.statementDay|numeric|2 ||mandatory |N/A | | | |
 |merchant.trn|alphanumeric|15 ||mandatory | N/A| | | |
 |merchant.fundSettlementLevel|alphabetic|1 |O, U|optional |N/A| | | |
-|merchant.legalType|alphanumeric|25 |LLC, SOLE_PROPRIETOR, PARTNERSHIP, FREE_ZONE|optional |N/ANA | | | |
+|merchant.legalType|alphanumeric|25 |LLC, SOLE_PROPRIETOR, PARTNERSHIP, FREE_ZONE|optional |N/A| | | |
 |**merchant.addresses**|object[]|N/A ||mandatory | mandatory | | | |
-|merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory |mandatory| | | ||merchant.addresses.name |alphanumeric|100 ||mandatory | | | |
-|merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|optial |mandaryt | | |
-|merchant.addresses.state|alphabetic|100 ||option | mandatory mandatory | | |
-|merchant.addresses.city|alphabetic|100 ||mandatory | mandatorymandatory| | | |
+|merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory |mandatory| | | |
+|merchant.addresses.name |alphanumeric|100 ||mandatory | | | |
+|merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|optional | | | |
+|merchant.addresses.state|alphabetic|100 ||option | optional| | |
+|merchant.addresses.city|alphabetic|100 ||mandatory | optional| | | |
 |merchant.addresses.phone|numeric|25 ||optional | mandatoryop| | | |
 |merchant.addresses.postalCode|numeric|25 ||mandatory |mandatorymandatory| | | |
 |merchant.addresses.pobox|numeric|25 ||optional | mandaryt|| | |
@@ -89,7 +90,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3MDQxNjQ2LC04MDM4OTEyNjYsLTE4OT
-k3NzIzNCw1MzEzNTU4NDYsLTIwODk0NTc2OCwxOTM1ODI0MDE4
-LDE4NDg3MTc1MjJdfQ==
+eyJoaXN0b3J5IjpbLTE0MDY5MTE5NTQsLTgwMzg5MTI2NiwtMT
+g5OTc3MjM0LDUzMTM1NTg0NiwtMjA4OTQ1NzY4LDE5MzU4MjQw
+MTgsMTg0ODcxNzUyMl19
 -->
