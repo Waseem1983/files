@@ -8,7 +8,7 @@ This document's target is to define all payload parameters in the different requ
 |**chain**| object |N/A ||optional|N/A | | | |
 |chain.chainId| alphanumeric | 25|| mandatory|N/A | | | | |
 |chain.chainName| alphanumeric  | 100|| mandatory| N/A| | | | |
-|chain.groupCode| alphabetic  | 10|AFG,  ALIMIGS, ASECYBS, ASEMIGS, ATG, BRLADP, DARADP, DDF, DET, DTR, EAM, ECMMIGS, EHMMIGS, EHSADP, ETI, ETS, FLD, FLN, JMB, JUM, KSA, MTOMOTO, OTH, RLG, ROTADP, RTA, SDG, TRNADP, TRNCYBS, TRNMIGS, TRNMOTO, TRNMPOS, TRNPOS, TRNSABR| mandatory| | | | | |
+|chain.groupCode| alphabetic  | 10|AFG,  ALIMIGS, ASECYBS, ASEMIGS, ATG, BRLADP, DARADP, DDF, DET, DTR, EAM, ECMMIGS, EHMMIGS, EHSADP, ETI, ETS, FLD, FLN, JMB, JUM, KSA, MTOMOTO, OTH, RLG, ROTADP, RTA, SDG, TRNADP, TRNCYBS, TRNMIGS, TRNMOTO, TRNMPOS, TRNPOS, TRNSABR| mandatory| N/A| | | | |
 |chain.chainLevelReportRequired| boolean |5 || mandatory|N/A | | | | |
 |chain.groupLevelReportingRequired| boolean | 5||mandatory |N/A | | | | |
 |**merchant**  |object[]  |N/A ||mandatory | mandatory| | | | |
@@ -22,8 +22,8 @@ This document's target is to define all payload parameters in the different requ
 |merchant.merchantCurrency|alphabetic|4 ||mandatory | | | | |
 |merchant.statementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |N/A | | | |
 |merchant.statementDeliveryType|alphabetic|5|Email, Fax|mandatory | N/A| | | |
-|merchant.paymentMode|alphabetic|3|EFT, EQ, FN, IFT, MC, NN, OB, TT |mandatory || | | |
-|merchant.kyc|boolean|5 ||mandatory | | | | |
+|merchant.paymentMode|alphabetic|3|EFT, EQ, FN, IFT, MC, NN, OB, TT |mandatory |N/A| | | |
+|merchant.kyc|boolean|5 ||mandatory |N/A | | | |
 |merchant.statementDay|numeric|2 ||mandatory |N/A | | | |
 |merchant.trn|alphanumeric|15 ||mandatory | N/A| | | |
 |merchant.fundSettlementLevel|alphabetic|1 |O, U|optional |N/A| | | |
@@ -90,7 +90,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5Nzg2NzE4NSwyMDkxMDAyMDUzLC04MD
-M4OTEyNjYsLTE4OTk3NzIzNCw1MzEzNTU4NDYsLTIwODk0NTc2
-OCwxOTM1ODI0MDE4LDE4NDg3MTc1MjJdfQ==
+eyJoaXN0b3J5IjpbMTMzMzUxNTksMjA5MTAwMjA1MywtODAzOD
+kxMjY2LC0xODk5NzcyMzQsNTMxMzU1ODQ2LC0yMDg5NDU3Njgs
+MTkzNTgyNDAxOCwxODQ4NzE3NTIyXX0=
 -->
