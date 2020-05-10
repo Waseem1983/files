@@ -5,16 +5,16 @@ This document's target is to define all payload parameters in the different requ
 | **field** | **Type** |**length**|**possible values**|**Way4**	|**Base24**|**Self-Services**|**MC-3D**|**Payload**
 |--|--|--|--|--|--|--|--|--|
 |**applications**| object[] |N/A ||mandatory|mandatory | | | | |
-|**chain**| object |N/A ||optional|N/A | | | | |
+|**chain**| object |N/A ||optional| | | | |
 |chain.chainId| alphanumeric | 25|| mandatory|N/A | | | | |
 |chain.chainName| alphanumeric  | 100|| mandatory| N/A| | | | |
-|chain.groupCode| alphabetic  | 10|AFG,  ALIMIGS, ASECYBS, ASEMIGS, ATG, BRLADP, DARADP, DDF, DET, DTR, EAM, ECMMIGS, EHMMIGS, EHSADP, ETI, ETS, FLD, FLN, JMB, JUM, KSA, MTOMOTO, OTH, RLG, ROTADP, RTA, SDG, TRNADP, TRNCYBS, TRNMIGS, TRNMOTO, TRNMPOS, TRNPOS, TRNSABR| mandatory| optional| | | | |
+|chain.groupCode| alphabetic  | 10|AFG,  ALIMIGS, ASECYBS, ASEMIGS, ATG, BRLADP, DARADP, DDF, DET, DTR, EAM, ECMMIGS, EHMMIGS, EHSADP, ETI, ETS, FLD, FLN, JMB, JUM, KSA, MTOMOTO, OTH, RLG, ROTADP, RTA, SDG, TRNADP, TRNCYBS, TRNMIGS, TRNMOTO, TRNMPOS, TRNPOS, TRNSABR| mandatory| | | | | |
 |chain.chainLevelReportRequired| boolean |5 || mandatory|N/A | | | | |
 |chain.groupLevelReportingRequired| boolean | 5||mandatory |N/A | | | | |
 |**merchant**  |object[]  |N/A ||mandatory | mandatory| | | | |
 |merchant.merchantId  |alphanumeric|25 ||mandatory |mandatory | | | |
 |merchant.merchantName|alphanumeric|100||mandatory | mandatory| | | |
-|merchant.legalName|alphanumeric|100 ||mandatory | optional| | | |
+|merchant.legalName|alphanumeric|100 ||mandatory | | | | |
 |merchant.merchantType|alphanumeric|4||mandatory |mandatory | | | |
 |merchant.mcc|numeric|5||mandatory |mandatory | | | |
 |merchant.debitAccountNumOrIban|alphanumeric|25 ||mandatory | N/A| | | |
@@ -22,30 +22,30 @@ This document's target is to define all payload parameters in the different requ
 |merchant.merchantCurrency|alphabetic|4 ||mandatory | mandatory| | | |
 |merchant.statementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |N/A | | | |
 |merchant.statementDeliveryType|alphabetic|5|Email, Fax|mandatory | N/A| | | |
-|merchant.paymentMode|alphabetic|3|EFT, EQ, FN, IFT, MC, NN, OB, TT |mandatory |N/A| | | |
-|merchant.kyc|boolean|5 ||mandatory | optional| | | |
-|merchant.statementDay|numeric|2 ||mandatory |N/A| | | |
+|merchant.paymentMode|alphabetic|3|EFT, EQ, FN, IFT, MC, NN, OB, TT |mandatory || | | |
+|merchant.kyc|boolean|5 ||mandatory | | | | |
+|merchant.statementDay|numeric|2 ||mandatory |N/A | | | |
 |merchant.trn|alphanumeric|15 ||mandatory | N/A| | | |
-|merchant.fundSettlementLevel|alphabetic|1 |O, U|optional |N/A | | | |
-|merchant.legalType|alphanumeric|25 |LLC, SOLE_PROPRIETOR, PARTNERSHIP, FREE_ZONE|optional |N/A | | | |
+|merchant.fundSettlementLevel|alphabetic|1 |O, U|optional |N/A| | | |
+|merchant.legalType|alphanumeric|25 |LLC, SOLE_PROPRIETOR, PARTNERSHIP, FREE_ZONE|optional |N/ANA | | | |
 |**merchant.addresses**|object[]|N/A ||mandatory | mandatory | | | |
-|merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory |mandatory| | | ||merchant.addresses.name |alphanumeric|100 ||mandatory |mandatory | | | |
-|merchant.addresses.countryCode|alphabetic|4 ||mandatory|optional | | | |
-|merchant.addresses.state|alphabetic|100 ||optional | optional| | | |
-|merchant.addresses.city|alphabetic|100 ||mandatory | optional| | | |
-|merchant.addresses.phone|numeric|25 ||optional | optional| | | |
-|merchant.addresses.postalCode|numeric|25 ||mandatory |optional| | | |
-|merchant.addresses.pobox|numeric|25 ||optional |mandatory || | |
+|merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory |mandatory| | | ||merchant.addresses.name |alphanumeric|100 ||mandatory | | | |
+|merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|optial |mandaryt | | |
+|merchant.addresses.state|alphabetic|100 ||option | mandatory mandatory | | |
+|merchant.addresses.city|alphabetic|100 ||mandatory | mandatorymandatory| | | |
+|merchant.addresses.phone|numeric|25 ||optional | mandatoryop| | | |
+|merchant.addresses.postalCode|numeric|25 ||mandatory |mandatorymandatory| | | |
+|merchant.addresses.pobox|numeric|25 ||optional | mandaryt|| | |
 |merchant.addresses.longitude|numeric|25 ||optional | optional| | | |
-|merchant.addresses.latitude|numeric|25 ||optional | optional| | | |
+|merchant.addresses.latitude|numeric|25 ||optional | | | | |
 |merchant.addresses.fax|numeric|25 ||optional | | | | |
 |merchant.addresses.email|alphanumeric|256 ||mandatory | | | | |
-|**merchant.configurations**|object|N/A||mandatory | mandatory| | | |
-|merchant.configurations.overrideDefaultSchemesMcc|boolean|5||optional |optional | | | |
+|**merchant.configurations**|object|N/A||mandatory | | | | |
+|merchant.configurations.overrideDefaultSchemesMcc|boolean|5||optional | | | | |
 |merchant.configurations.commissionSettlement|alphabetic|15|NEXT_STTLM,  M1|mandatory | | | | |
 |merchant.configurations.refundControlValue|alphabetic|1|G, R, C, N|mandatory | | | | |
-|**merchant.configurations.acceptedCardSchemes**|object[]|N/A||mandatory | mandatory| | | |
-|merchant.configurations.acceptedCardSchemes.cardScheme|alphabetic|4|VISA, MC, PL, JCB, CUP, MER, DCI, AMEX, TBOD, DODB, DOCR, DOHY, SBOC, SBOD, DOPR|mandatory | mandatory| | | |
+|**merchant.configurations.acceptedCardSchemes**|object[]|N/A||mandatory | | | | |
+|merchant.configurations.acceptedCardSchemes.cardScheme|alphabetic|4|VISA, MC, PL, JCB, CUP, MER, DCI, AMEX, TBOD, DODB, DOCR, DOHY, SBOC, SBOD, DOPR|mandatory | | | | |
 |merchant.configurations.acceptedCardSchemes.tariffRate|numeric|10||mandatory in case of simple pricing merchants | | | | |
 |**merchant.configurations.acceptedCardSchemes.acceptedCardModes**|object[]|N/A||mandatory in case of complex pricing merchants |N/A | | | |
 |merchant.configurations.acceptedCardSchemes.acceptedCardModes.modeName|alphabetic|15|ELECTRONIC, MANUAL, INTERNATIONAL, DOMESTIC, PREMIUM|mandatory |N/A | | | |
@@ -89,7 +89,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzkxMjIwMjEsLTgwMzg5MTI2NiwtMT
-g5OTc3MjM0LDUzMTM1NTg0NiwtMjA4OTQ1NzY4LDE5MzU4MjQw
-MTgsMTg0ODcxNzUyMl19
+eyJoaXN0b3J5IjpbODQ3MDQxNjQ2LC04MDM4OTEyNjYsLTE4OT
+k3NzIzNCw1MzEzNTU4NDYsLTIwODk0NTc2OCwxOTM1ODI0MDE4
+LDE4NDg3MTc1MjJdfQ==
 -->
