@@ -32,12 +32,12 @@ This document's target is to define all payload parameters in the different requ
 |merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory | | | |
 |merchant.addresses.name |alphanumeric|100 ||mandatory | | | |
 |merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|| |  |
-|merchant.addresses.state|alphabetic|100 ||option | optionalmandatory  | | |
-|merchant.addresses.city|alphabetic|100 ||mandatory | optionalmandatory| | | |
-|merchant.addresses.phone|numeric|25 ||optional || | | |
-|merchant.addresses.postalCode|numeric|25 ||mandatory |optionalmandatory| | | |
-|merchant.addresses.pobox|numeric|25 ||optional | optionalmandaryt|| | |
-|merchant.addresses.longitude|numeric|25 ||optional | optionalN/A| | | |
+|merchant.addresses.state|alphabetic|100 ||option | optional  | | |
+|merchant.addresses.city|alphabetic|100 ||mandatory | optional| | | |
+|merchant.addresses.phone|numeric|25 ||optional |optional| | | |
+|merchant.addresses.postalCode|numeric|25 ||mandatory |optional| | | |
+|merchant.addresses.pobox|numeric|25 ||optional | optional|| | |
+|merchant.addresses.longitude|numeric|25 ||optional |N/A| | | |
 |merchant.addresses.latitude|numeric|25 ||optional |N/A | | | |
 |merchant.addresses.fax|numeric|25 ||optional |N/A | | | |
 |merchant.addresses.email|alphanumeric|256 ||mandatory |optional | | | |
@@ -90,7 +90,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwODIyMzQwLC04MDM4OTEyNjYsLTE4OT
-k3NzIzNCw1MzEzNTU4NDYsLTIwODk0NTc2OCwxOTM1ODI0MDE4
-LDE4NDg3MTc1MjJdfQ==
+eyJoaXN0b3J5IjpbMjA5MTAwMjA1MywtODAzODkxMjY2LC0xOD
+k5NzcyMzQsNTMxMzU1ODQ2LC0yMDg5NDU3NjgsMTkzNTgyNDAx
+OCwxODQ4NzE3NTIyXX0=
 -->
