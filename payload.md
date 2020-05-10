@@ -20,8 +20,8 @@ This document's target is to define all payload parameters in the different requ
 |merchant.debitAccountNumOrIban|alphanumeric|25 ||mandatory | N/A| | | |
 |merchant.creditAccountNumOrIban|alphanumeric|25 ||mandatory |N/A | | | |
 |merchant.merchantCurrency|alphabetic|4 ||mandatory | mandatory| | | |
-|merchant.statementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |optional | | | |
-|merchant.statementDeliveryType|alphabetic|5|Email, Fax|mandatory | optional| | | |
+|merchant.statementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |N/A | | | |
+|merchant.statementDeliveryType|alphabetic|5|Email, Fax|mandatory | N/A| | | |
 |merchant.paymentMode|alphabetic|3|EFT, EQ, FN, IFT, MC, NN, OB, TT |mandatory |optional | | | |
 |merchant.kyc|boolean|5 ||mandatory | optional| | | |
 |merchant.statementDay|numeric|2 ||mandatory |optional | | | |
@@ -89,7 +89,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYzMDk0NTcyLC04MDM4OTEyNjYsLTE4OT
-k3NzIzNCw1MzEzNTU4NDYsOTc4MDEyMTA5LC0yMDg5NDU3Njgs
-LTExNDMxMDMyMiwxOTM1ODI0MDE4LDY2ODcyNjQ3OF19
+eyJoaXN0b3J5IjpbLTE3MzA1NjYyOTAsLTgwMzg5MTI2NiwtMT
+g5OTc3MjM0LDUzMTM1NTg0Niw5NzgwMTIxMDksLTIwODk0NTc2
+OCwtMTE0MzEwMzIyLDE5MzU4MjQwMTgsNjY4NzI2NDc4XX0=
 -->
