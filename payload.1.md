@@ -36,15 +36,15 @@ This document's target is to define all payload parameters in the different requ
 |merchant.addresses.city|alphabetic|100 ||mandatory | optional| | | |
 |merchant.addresses.phone|numeric|25 ||optional | optional| | | |
 |merchant.addresses.postalCode|numeric|25 ||mandatory |optional| | | |
-|merchant.addresses.pobox|numeric|25 ||optional | mandaryt|| | |
-|merchant.addresses.longitude|numeric|25 ||optional | optional| | | |
-|merchant.addresses.latitude|numeric|25 ||optional | | | | |
-|merchant.addresses.fax|numeric|25 ||optional | | | | |
-|merchant.addresses.email|alphanumeric|256 ||mandatory | | | | |
-|**merchant.configurations**|object|N/A||mandatory | | | | |
-|merchant.configurations.overrideDefaultSchemesMcc|boolean|5||optional | | | | |
-|merchant.configurations.commissionSettlement|alphabetic|15|NEXT_STTLM,  M1|mandatory | | | | |
-|merchant.configurations.refundControlValue|alphabetic|1|G, R, C, N|mandatory | | | | |
+|merchant.addresses.pobox|numeric|25 ||optional | optional|| | |
+|merchant.addresses.longitude|numeric|25 ||optional |N/A| | | |
+|merchant.addresses.latitude|numeric|25 ||optional |N/A | | | |
+|merchant.addresses.fax|numeric|25 ||optional |N/A | | | |
+|merchant.addresses.email|alphanumeric|256 ||mandatory |optional | | | |
+|**merchant.configurations**|object|N/A||mandatory |mandatory | | | |
+|merchant.configurations.overrideDefaultSchemesMcc|boolean|5||optional |N/A | | | |
+|merchant.configurations.commissionSettlement|alphabetic|15|NEXT_STTLM,  M1|mandatory |N/A | | | |
+|merchant.configurations.refundControlValue|alphabetic|1|G, R, C, N|mandatory | N/A| | | |
 |**merchant.configurations.acceptedCardSchemes**|object[]|N/A||mandatory | | | | |
 |merchant.configurations.acceptedCardSchemes.cardScheme|alphabetic|4|VISA, MC, PL, JCB, CUP, MER, DCI, AMEX, TBOD, DODB, DOCR, DOHY, SBOC, SBOD, DOPR|mandatory | | | | |
 |merchant.configurations.acceptedCardSchemes.tariffRate|numeric|10||mandatory in case of simple pricing merchants | | | | |
@@ -90,7 +90,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUyNTc2MDU2LC04MDM4OTEyNjYsLTE4OT
-k3NzIzNCw1MzEzNTU4NDYsLTIwODk0NTc2OCwxOTM1ODI0MDE4
-LDE4NDg3MTc1MjJdfQ==
+eyJoaXN0b3J5IjpbLTE2MTU1NTg1NTksLTgwMzg5MTI2NiwtMT
+g5OTc3MjM0LDUzMTM1NTg0NiwtMjA4OTQ1NzY4LDE5MzU4MjQw
+MTgsMTg0ODcxNzUyMl19
 -->
