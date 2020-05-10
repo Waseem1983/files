@@ -85,14 +85,14 @@ This document's target is to define all payload parameters in the different requ
 |merchant.terminals.allowedOperations.preAuthorization|boolean|5||optional |N/A | | | |
 |merchant.terminals.allowedOperations.keyEntry|boolean|5||optional | N/A| | | |
 |merchant.terminals.allowedOperations.cashAdvance|boolean|5||optional | N/A| | | |
-|**merchant.user**|object|N/A||N/A | | | | |
+|**merchant.user**|object|N/A||N/A | N/A| | | |
 |merchant.user.firstName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.lastName|alphanumeric|100||N/A | N/A| | | |
 |merchant.user.email|alphanumeric|256||N/A | N/A| | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcxMDE4ODQyLC0xNTE0NTg1MjE5LDE5OD
-gwNzE0MzQsLTIxMzI4MDU5ODMsNTk5MDI4NTUsMjA5MTAwMjA1
-MywtMTI4NDI5Mzg3Miw5Mzg1Njk0MjAsLTgwMzg5MTI2NiwtMT
-g5OTc3MjM0LDUzMTM1NTg0Niw5NzgwMTIxMDksLTIwODk0NTc2
-OCwtMTE0MzEwMzIyLDE5MzU4MjQwMTgsNjY4NzI2NDc4XX0=
+eyJoaXN0b3J5IjpbMTc5ODExMzIzMiwtMTUxNDU4NTIxOSwxOT
+g4MDcxNDM0LC0yMTMyODA1OTgzLDU5OTAyODU1LDIwOTEwMDIw
+NTMsLTEyODQyOTM4NzIsOTM4NTY5NDIwLC04MDM4OTEyNjYsLT
+E4OTk3NzIzNCw1MzEzNTU4NDYsOTc4MDEyMTA5LC0yMDg5NDU3
+NjgsLTExNDMxMDMyMiwxOTM1ODI0MDE4LDY2ODcyNjQ3OF19
 -->
