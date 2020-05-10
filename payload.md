@@ -25,17 +25,17 @@ This document's target is to define all payload parameters in the different requ
 |merchant.paymentMode|alphabetic|3|EFT, EQ, FN, IFT, MC, NN, OB, TT |mandatory || | | |
 |merchant.kyc|boolean|5 ||mandatory | | | | |
 |merchant.statementDay|numeric|2 ||mandatory |N/A | | | |
-|merchant.trn|alphanumeric|15 ||mandatory | | | | |
+|merchant.trn|alphanumeric|15 ||mandatory | N/A| | | |
 |merchant.fundSettlementLevel|alphabetic|1 |O, U|optional |N/A| | | |
-|merchant.legalType|alphanumeric|25 |LLC, SOLE_PROPRIETOR, PARTNERSHIP, FREE_ZONE|optional |N/Aoptional | | | |
+|merchant.legalType|alphanumeric|25 |LLC, SOLE_PROPRIETOR, PARTNERSHIP, FREE_ZONE|optional |N/A | | | |
 |**merchant.addresses**|object[]|N/A ||mandatory | mandatory | | | |
 |merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory |mandatory| | | ||merchant.addresses.name |alphanumeric|100 ||mandatory | | | |
-|merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|optional | | | |
-|merchant.addresses.state|alphabetic|100 ||optional | mandatoryoptional| | | |
-|merchant.addresses.city|alphabetic|100 ||mandatory | mandatoryoptional| | | |
-|merchant.addresses.phone|numeric|25 ||optional | mandatoryoptional| | | |
-|merchant.addresses.postalCode|numeric|25 ||mandatory |mandatoryoptional| | | |
-|merchant.addresses.pobox|numeric|25 ||optional | || | |
+|merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|optial |mandaryt | | |
+|merchant.addresses.state|alphabetic|100 ||option | mandatory mandatory | | |
+|merchant.addresses.city|alphabetic|100 ||mandatory | mandatorymandatory| | | |
+|merchant.addresses.phone|numeric|25 ||optional | mandatoryop| | | |
+|merchant.addresses.postalCode|numeric|25 ||mandatory |mandatorymandatory| | | |
+|merchant.addresses.pobox|numeric|25 ||optional | mandaryt|| | |
 |merchant.addresses.longitude|numeric|25 ||optional | optional| | | |
 |merchant.addresses.latitude|numeric|25 ||optional | | | | |
 |merchant.addresses.fax|numeric|25 ||optional | | | | |
@@ -89,7 +89,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NzgyOTYzNSw5Mzg1Njk0MjAsLTgwMz
+eyJoaXN0b3J5IjpbLTc0Mjg3NjU0Myw5Mzg1Njk0MjAsLTgwMz
 g5MTI2NiwtMTg5OTc3MjM0LDUzMTM1NTg0Niw5NzgwMTIxMDks
 LTIwODk0NTc2OCwtMTE0MzEwMzIyLDE5MzU4MjQwMTgsNjY4Nz
 I2NDc4XX0=
