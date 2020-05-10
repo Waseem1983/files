@@ -31,7 +31,7 @@ This document's target is to define all payload parameters in the different requ
 |**merchant.addresses**|object[]|N/A ||mandatory |mandatory | | |
 |merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory |mandatory | | |
 |merchant.addresses.name |alphanumeric|100 ||mandatory|N/A| | | |
-|merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|| |  |
+|merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|| | 
 |merchant.addresses.state|alphabetic|100 ||option | optional  | | |
 |merchant.addresses.city|alphabetic|100 ||mandatory | optional| | | |
 |merchant.addresses.phone|numeric|25 ||optional |optional| | | |
@@ -80,17 +80,17 @@ This document's target is to define all payload parameters in the different requ
 |merchant.terminals.fees.feeValue|numeric|10||mandatory | N/A| | | |
 |**merchant.terminals.allowedOperations**|object|N/A||optional |N/A | | | |
 |merchant.terminals.allowedOperations.tips|boolean|5||optional | N/A| | | |
-|merchant.terminals.allowedOperations.standardFunction||boolean|N/A|N/A | | | | |
-|merchant.terminals.allowedOperations.refund|boolean|5|| |N/A |N/A | | |
+|merchant.terminals.allowedOperations.standardFunction||boolean||N/A | | | | |
+|merchant.terminals.allowedOperations.refund|boolean|5|N/A |N/A | | |
 |merchant.terminals.allowedOperations.preAuthorization|boolean|5||N/A|N/A | | | | |
 |merchant.terminals.allowedOperations.keyEntry|boolean|5||optional | N/A| | | |
 |merchant.terminals.allowedOperations.cashAdvance|boolean|5||optional |N/A | | | |
-|**merchant.user**|object|N/A||N/A | | | | |
+|**merchant.user**|object|N/A||N/A |N/A | | | |
 |merchant.user.firstName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI5MDYzOTY1LDIwOTEwMDIwNTMsLTgwMz
-g5MTI2NiwtMTg5OTc3MjM0LDUzMTM1NTg0NiwtMjA4OTQ1NzY4
-LDE5MzU4MjQwMTgsMTg0ODcxNzUyMl19
+eyJoaXN0b3J5IjpbLTE1MTQ1ODUyMTksMjA5MTAwMjA1MywtOD
+AzODkxMjY2LC0xODk5NzcyMzQsNTMxMzU1ODQ2LC0yMDg5NDU3
+NjgsMTkzNTgyNDAxOCwxODQ4NzE3NTIyXX0=
 -->
