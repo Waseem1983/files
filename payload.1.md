@@ -5,7 +5,7 @@ This document's target is to define all payload parameters in the different requ
 | **field** | **Type** |**length**|**possible values**|**Way4**	|**Base24**|**Self-Services**|**MC-3D**|**Payload**
 |--|--|--|--|--|--|--|--|--|
 |**applications**| object[] |N/A ||mandatory|mandatory | | | | |
-|**chain**| object |N/A ||optional| | | | |
+|**chain**| object |N/A ||optional|N/A | | | |
 |chain.chainId| alphanumeric | 25|| mandatory|N/A | | | | |
 |chain.chainName| alphanumeric  | 100|| mandatory| N/A| | | | |
 |chain.groupCode| alphabetic  | 10|AFG,  ALIMIGS, ASECYBS, ASEMIGS, ATG, BRLADP, DARADP, DDF, DET, DTR, EAM, ECMMIGS, EHMMIGS, EHSADP, ETI, ETS, FLD, FLN, JMB, JUM, KSA, MTOMOTO, OTH, RLG, ROTADP, RTA, SDG, TRNADP, TRNCYBS, TRNMIGS, TRNMOTO, TRNMPOS, TRNPOS, TRNSABR| mandatory| | | | | |
@@ -34,13 +34,13 @@ This document's target is to define all payload parameters in the different requ
 |merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|| |  |
 |merchant.addresses.state|alphabetic|100 ||option | optional  | | |
 |merchant.addresses.city|alphabetic|100 ||mandatory | optional| | | |
-|merchant.addresses.phone|numeric|25 ||optional |optional| | | |
+|merchant.addresses.phone|numeric|25 ||optional || | | |
 |merchant.addresses.postalCode|numeric|25 ||mandatory |optional| | | |
 |merchant.addresses.pobox|numeric|25 ||optional | optional|| | |
-|merchant.addresses.longitude|numeric|25 ||optional |N/A| | | |
+|merchant.addresses.longitude|numeric|25 ||optional || | | |
 |merchant.addresses.latitude|numeric|25 ||optional |N/A | | | |
 |merchant.addresses.fax|numeric|25 ||optional |N/A | | | |
-|merchant.addresses.email|alphanumeric|256 ||mandatory |optional | | | |
+|merchant.addresses.email|alphanumeric|256 ||mandatory || | | |
 |**merchant.configurations**|object|N/A||mandatory |mandatory | | | |
 |merchant.configurations.overrideDefaultSchemesMcc|boolean|5||optional |N/A | | | |
 |merchant.configurations.commissionSettlement|alphabetic|15|NEXT_STTLM,  M1|mandatory |N/A | | | |
@@ -48,7 +48,7 @@ This document's target is to define all payload parameters in the different requ
 |**merchant.configurations.acceptedCardSchemes**|object[]|N/A||mandatory |mandatory | | | |
 |merchant.configurations.acceptedCardSchemes.cardScheme|alphabetic|4|VISA, MC, PL, JCB, CUP, MER, DCI, AMEX, TBOD, DODB, DOCR, DOHY, SBOC, SBOD, DOPR|mandatory |mandatory | | | |
 |merchant.configurations.acceptedCardSchemes.tariffRate|numeric|10||mandatory in case of simple pricing merchants | N/A| | | |
-|**merchant.configurations.acceptedCardSchemes.acceptedCardModes**|object[]|N/A||mandatory in case of complex pricing merchants |N/A |N/A| | |
+|**merchant.configurations.acceptedCardSchemes.acceptedCardModes**|object[]|N/A||mandatory in case of complex pricing merchants |N/A || | |
 |merchant.configurations.acceptedCardSchemes.acceptedCardModes.modeName|alphabetic|15|ELECTRONIC, MANUAL, INTERNATIONAL, DOMESTIC, PREMIUM|mandatory |N/A | | | |
 |merchant.configurations.acceptedCardSchemes.acceptedCardModes.rate|numeric|10||mandatory |N/A | | | |
 |**merchant.configurations.acceptedCardSchemes.schemeOverrideValue**|object|N/A||mandatory in case overrideDefaultSchemesMcc is true| N/A| | | |
@@ -57,8 +57,8 @@ This document's target is to define all payload parameters in the different requ
 |**merchant.configurations.fees**|object[]|N/A||mandatory | N/A| | | |
 |merchant.configurations.fees.feeTypeName|alphabetic|15|MIS, ACQ_MMBR_FEE, MFEE_STRT, MFEE_FRD_HND, FRAUD_HAND_FEE, TRANS_FEE, REFUND_FEE|mandatory | N/A| | | |
 |merchant.configurations.fees.reOccurrenceFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |N/A| | | |
-|merchant.configurations.fees.feeValue|numeric|10||mandatory |N/A| | | |
-|**merchant.services**|object[]|N/A||optional | N/A| | | |
+|merchant.configurations.fees.feeValue|numeric|10|||N/A| | | |
+|**merchant.services**|object[]|N/A|| | N/A| | | |
 |merchant.services.serviceType|alphabetic|15|DCC, RENTAL, MC_3D_SECURE|mandatory |N/A| | | |
 |merchant.services.dccProvider|alphabetic|2|PP, FX|mandatory in case of serviceType is DCC |N/A | | | |
 |merchant.services.dccSettlementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory in case of serviceType is DCC |N/A | | | |
@@ -68,10 +68,10 @@ This document's target is to define all payload parameters in the different requ
 |merchant.services.dccMarkupRate|numeric|10||mandatory in case of serviceType is 'DCC' |N/A | | | |
 |merchant.services.rentalModeCode|alphabetic|10|CASH, CHEQUE|mandatory in case of serviceType is 'RENTAL' |N/A| | | |
 |merchant.services.rentalModeName|alphabetic|10||mandatory in case of serviceType is 'RENTAL' |N/A| | | |
-|**merchant.terminals**|object[]|N/A||Mandatory || | | |
+|**merchant.terminals**|object[]|N/A||optionalMandatory || | | |
 |merchant.terminals.terminalId|alphanumeric|25||mandatory |mandatory | | | |
 |merchant.terminals.terminalType|alphanumeric|10||mandatory |optional | | | |
-|merchant.terminals.maker|alphanumeric|10||N/A| | | | |
+|merchant.terminals.maker|alphanumeric|10||mandatory N/A| | | | |
 |merchant.terminals.terminalModel|alphanumeric|25||mandatory |N/A | | | |
 |merchant.terminals.communicationMethod|alphanumeric|10|SG,  GPRS_SIM|mandatory |N/A| | | |
 |merchant.terminals.dccEnabled|boolean|5||mandatory |N/A | | | |
@@ -90,7 +90,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MTU4NDY0NywyMDkxMDAyMDUzLC04MD
-M4OTEyNjYsLTE4OTk3NzIzNCw1MzEzNTU4NDYsLTIwODk0NTc2
-OCwxOTM1ODI0MDE4LDE4NDg3MTc1MjJdfQ==
+eyJoaXN0b3J5IjpbLTIwNzU3NDU2MTksMjA5MTAwMjA1MywtOD
+AzODkxMjY2LC0xODk5NzcyMzQsNTMxMzU1ODQ2LC0yMDg5NDU3
+NjgsMTkzNTgyNDAxOCwxODQ4NzE3NTIyXX0=
 -->
