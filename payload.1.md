@@ -22,11 +22,11 @@ This document's target is to define all payload parameters in the different requ
 |merchant.merchantCurrency|alphabetic|4 ||mandatory | mandatory| | | |
 |merchant.statementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |N/A | | | |
 |merchant.statementDeliveryType|alphabetic|5|Email, Fax|mandatory | N/A| | | |
-|merchant.paymentMode|alphabetic|3|EFT, EQ, FN, IFT, MC, NN, OB, TT |mandatory |optional | | | |
+|merchant.paymentMode|alphabetic|3|EFT, EQ, FN, IFT, MC, NN, OB, TT |mandatory |N/A| | | |
 |merchant.kyc|boolean|5 ||mandatory | optional| | | |
-|merchant.statementDay|numeric|2 ||mandatory |optional | | | |
-|merchant.trn|alphanumeric|15 ||mandatory | optional| | | |
-|merchant.fundSettlementLevel|alphabetic|1 |O, U|optional |optional | | | |
+|merchant.statementDay|numeric|2 ||mandatory |N/A| | | |
+|merchant.trn|alphanumeric|15 ||mandatory | N/A| | | |
+|merchant.fundSettlementLevel|alphabetic|1 |O, U|optional |N/A | | | |
 |merchant.legalType|alphanumeric|25 |LLC, SOLE_PROPRIETOR, PARTNERSHIP, FREE_ZONE|optional |optional | | | |
 |**merchant.addresses**|object[]|N/A ||mandatory | mandatory | | | |
 |merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory |mandatory| | | ||merchant.addresses.name |alphanumeric|100 ||mandatory |mandatory | | | |
@@ -89,7 +89,7 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzA1NjYyOTAsLTgwMzg5MTI2NiwtMT
-g5OTc3MjM0LDUzMTM1NTg0NiwtMjA4OTQ1NzY4LDE5MzU4MjQw
-MTgsMTg0ODcxNzUyMl19
+eyJoaXN0b3J5IjpbMTI3OTg2NDMyMiwtODAzODkxMjY2LC0xOD
+k5NzcyMzQsNTMxMzU1ODQ2LC0yMDg5NDU3NjgsMTkzNTgyNDAx
+OCwxODQ4NzE3NTIyXX0=
 -->
