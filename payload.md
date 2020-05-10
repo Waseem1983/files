@@ -81,16 +81,16 @@ This document's target is to define all payload parameters in the different requ
 |**merchant.terminals.allowedOperations**|object|N/A||optional |N/A | | | |
 |merchant.terminals.allowedOperations.tips|boolean|5||optional | N/A| | | |
 |merchant.terminals.allowedOperations.standardFunction||boolean||N/A | | | | |
-|merchant.terminals.allowedOperations.refund|boolean|5|| |N/A |N/A | | |
+|merchant.terminals.allowedOperations.refund|boolean|5|N/A |N/A | | |
 |merchant.terminals.allowedOperations.preAuthorization|boolean|5||N/A|N/A | | | | |
 |merchant.terminals.allowedOperations.keyEntry|boolean|5||optional | N/A| | | |
 |merchant.terminals.allowedOperations.cashAdvance|boolean|5||optional |N/A | | | |
-|**merchant.user**|object|N/A||N/A | | | | |
+|**merchant.user**|object|N/A||N/A |N/A | | | |
 |merchant.user.firstName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTY2MTQ5NzEsMTk4ODA3MTQzNCwtMj
+eyJoaXN0b3J5IjpbLTE1MTQ1ODUyMTksMTk4ODA3MTQzNCwtMj
 EzMjgwNTk4Myw1OTkwMjg1NSwyMDkxMDAyMDUzLC0xMjg0Mjkz
 ODcyLDkzODU2OTQyMCwtODAzODkxMjY2LC0xODk5NzcyMzQsNT
 MxMzU1ODQ2LDk3ODAxMjEwOSwtMjA4OTQ1NzY4LC0xMTQzMTAz
