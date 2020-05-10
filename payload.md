@@ -57,8 +57,8 @@ This document's target is to define all payload parameters in the different requ
 |**merchant.configurations.fees**|object[]|N/A||mandatory | N/A| | | |
 |merchant.configurations.fees.feeTypeName|alphabetic|15|MIS, ACQ_MMBR_FEE, MFEE_STRT, MFEE_FRD_HND, FRAUD_HAND_FEE, TRANS_FEE, REFUND_FEE|mandatory | N/A| | | |
 |merchant.configurations.fees.reOccurrenceFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory |N/A| | | |
-|merchant.configurations.fees.feeValue|numeric|10||mandatory |N/A| | | |
-|**merchant.services**|object[]|N/A||optional | N/A| | | |
+|merchant.configurations.fees.feeValue|numeric|10|||N/A| | | |
+|**merchant.services**|object[]|N/A|| | N/A| | | |
 |merchant.services.serviceType|alphabetic|15|DCC, RENTAL, MC_3D_SECURE|mandatory |N/A| | | |
 |merchant.services.dccProvider|alphabetic|2|PP, FX|mandatory in case of serviceType is DCC |N/A | | | |
 |merchant.services.dccSettlementFrequency|alphabetic|10|DAILY, WEEKLY, MONTHLY|mandatory in case of serviceType is DCC |N/A | | | |
@@ -68,14 +68,14 @@ This document's target is to define all payload parameters in the different requ
 |merchant.services.dccMarkupRate|numeric|10||mandatory in case of serviceType is 'DCC' |N/A | | | |
 |merchant.services.rentalModeCode|alphabetic|10|CASH, CHEQUE|mandatory in case of serviceType is 'RENTAL' |N/A| | | |
 |merchant.services.rentalModeName|alphabetic|10||mandatory in case of serviceType is 'RENTAL' |N/A| | | |
-|**merchant.terminals**|object[]|N/A||optional || | | |
+|**merchant.terminals**|object[]|N/A||optionalMandatory || | | |
 |merchant.terminals.terminalId|alphanumeric|25||mandatory |mandatory | | | |
-|merchant.terminals.terminalType|alphanumeric|10||mandatory | | | | |
-|merchant.terminals.maker|alphanumeric|10||mandatory | | | | |
-|merchant.terminals.terminalModel|alphanumeric|25||mandatory | | | | |
-|merchant.terminals.communicationMethod|alphanumeric|10|SG,  GPRS_SIM|mandatory || | | |
-|merchant.terminals.dccEnabled|boolean|5||mandatory | | | | |
-|**merchant.terminals.fees**|object[]|N/A||mandatory | N/Aoptional| | | |
+|merchant.terminals.terminalType|alphanumeric|10||mandatory |optional | | | |
+|merchant.terminals.maker|alphanumeric|10||mandatory N/A| | | | |
+|merchant.terminals.terminalModel|alphanumeric|25||mandatory |N/A | | | |
+|merchant.terminals.communicationMethod|alphanumeric|10|SG,  GPRS_SIM|mandatory |N/A| | | |
+|merchant.terminals.dccEnabled|boolean|5||mandatory |N/A | | | |
+|**merchant.terminals.fees**|object[]|N/A||mandatory | N/A| | | |
 |merchant.terminals.fees.feeType|alphabetic|25|SIM_FEE,  GPRS_FEE,  TERMINAL_RENTAL_FEE,  INS_FEE|mandatory |N/A | | | |
 |merchant.terminals.fees.feeValue|numeric|10||mandatory | N/A| | | |
 |**merchant.terminals.allowedOperations**|object|N/A||optional |N/A | | | |
@@ -90,8 +90,9 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5MDI4NTUsMjA5MTAwMjA1MywtMTI4ND
-I5Mzg3Miw5Mzg1Njk0MjAsLTgwMzg5MTI2NiwtMTg5OTc3MjM0
-LDUzMTM1NTg0Niw5NzgwMTIxMDksLTIwODk0NTc2OCwtMTE0Mz
-EwMzIyLDE5MzU4MjQwMTgsNjY4NzI2NDc4XX0=
+eyJoaXN0b3J5IjpbLTE2ODg0NDQ2NjcsNTk5MDI4NTUsMjA5MT
+AwMjA1MywtMTI4NDI5Mzg3Miw5Mzg1Njk0MjAsLTgwMzg5MTI2
+NiwtMTg5OTc3MjM0LDUzMTM1NTg0Niw5NzgwMTIxMDksLTIwOD
+k0NTc2OCwtMTE0MzEwMzIyLDE5MzU4MjQwMTgsNjY4NzI2NDc4
+XX0=
 -->
