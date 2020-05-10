@@ -34,13 +34,13 @@ This document's target is to define all payload parameters in the different requ
 |merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|| |  |
 |merchant.addresses.state|alphabetic|100 ||option | optional  | | |
 |merchant.addresses.city|alphabetic|100 ||mandatory | optional| | | |
-|merchant.addresses.phone|numeric|25 ||optional || | | |
+|merchant.addresses.phone|numeric|25 ||optional |optional| | | |
 |merchant.addresses.postalCode|numeric|25 ||mandatory |optional| | | |
 |merchant.addresses.pobox|numeric|25 ||optional | optional|| | |
-|merchant.addresses.longitude|numeric|25 ||optional || | | |
+|merchant.addresses.longitude|numeric|25 ||optional |N/A| | | |
 |merchant.addresses.latitude|numeric|25 ||optional |N/A | | | |
 |merchant.addresses.fax|numeric|25 ||optional |N/A | | | |
-|merchant.addresses.email|alphanumeric|256 ||mandatory || | | |
+|merchant.addresses.email|alphanumeric|256 ||mandatory|optional| | | |
 |**merchant.configurations**|object|N/A||mandatory |mandatory | | | |
 |merchant.configurations.overrideDefaultSchemesMcc|boolean|5||optional |N/A | | | |
 |merchant.configurations.commissionSettlement|alphabetic|15|NEXT_STTLM,  M1|mandatory |N/A | | | |
@@ -90,9 +90,9 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzU3NDU2MTksNTk5MDI4NTUsMjA5MT
-AwMjA1MywtMTI4NDI5Mzg3Miw5Mzg1Njk0MjAsLTgwMzg5MTI2
-NiwtMTg5OTc3MjM0LDUzMTM1NTg0Niw5NzgwMTIxMDksLTIwOD
-k0NTc2OCwtMTE0MzEwMzIyLDE5MzU4MjQwMTgsNjY4NzI2NDc4
-XX0=
+eyJoaXN0b3J5IjpbMTk5Nzg2NzE4NSw1OTkwMjg1NSwyMDkxMD
+AyMDUzLC0xMjg0MjkzODcyLDkzODU2OTQyMCwtODAzODkxMjY2
+LC0xODk5NzcyMzQsNTMxMzU1ODQ2LDk3ODAxMjEwOSwtMjA4OT
+Q1NzY4LC0xMTQzMTAzMjIsMTkzNTgyNDAxOCw2Njg3MjY0Nzhd
+fQ==
 -->
