@@ -80,19 +80,19 @@ This document's target is to define all payload parameters in the different requ
 |merchant.terminals.fees.feeValue|numeric|10||mandatory | N/A| | | |
 |**merchant.terminals.allowedOperations**|object|N/A||optional |N/A | | | |
 |merchant.terminals.allowedOperations.tips|boolean|5||optional | N/A| | | |
-|merchant.terminals.allowedOperations.standardFunction||boolean||N/A | | | | |
-|merchant.terminals.allowedOperations.refund|boolean|5|N/A |N/A | | |
-|merchant.terminals.allowedOperations.preAuthorization|boolean|5||N/A|N/A | | | | |
+|merchant.terminals.allowedOperations.standardFunction||boolean|5|optional |N/A | | | |
+|merchant.terminals.allowedOperations.refund|boolean|5||optional | N/A| | | |
+|merchant.terminals.allowedOperations.preAuthorization|boolean|5||optional |N/A | | | |
 |merchant.terminals.allowedOperations.keyEntry|boolean|5||optional | N/A| | | |
-|merchant.terminals.allowedOperations.cashAdvance|boolean|5||optional |N/A | | | |
-|**merchant.user**|object|N/A||N/A |N/A | | | |
+|merchant.terminals.allowedOperations.cashAdvance|boolean|5||optional | N/A| | | |
+|**merchant.user**|object|N/A||N/A | | | | |
 |merchant.user.firstName|alphanumeric|100||N/A |N/A | | | |
-|merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
-|merchant.user.email|alphanumeric|256||N/A |N/A | | | |
+|merchant.user.lastName|alphanumeric|100||N/A | N/A| | | |
+|merchant.user.email|alphanumeric|256||N/A | N/A| | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTQ1ODUyMTksMTk4ODA3MTQzNCwtMj
-EzMjgwNTk4Myw1OTkwMjg1NSwyMDkxMDAyMDUzLC0xMjg0Mjkz
-ODcyLDkzODU2OTQyMCwtODAzODkxMjY2LC0xODk5NzcyMzQsNT
-MxMzU1ODQ2LDk3ODAxMjEwOSwtMjA4OTQ1NzY4LC0xMTQzMTAz
-MjIsMTkzNTgyNDAxOCw2Njg3MjY0NzhdfQ==
+eyJoaXN0b3J5IjpbNjcxMDE4ODQyLC0xNTE0NTg1MjE5LDE5OD
+gwNzE0MzQsLTIxMzI4MDU5ODMsNTk5MDI4NTUsMjA5MTAwMjA1
+MywtMTI4NDI5Mzg3Miw5Mzg1Njk0MjAsLTgwMzg5MTI2NiwtMT
+g5OTc3MjM0LDUzMTM1NTg0Niw5NzgwMTIxMDksLTIwODk0NTc2
+OCwtMTE0MzEwMzIyLDE5MzU4MjQwMTgsNjY4NzI2NDc4XX0=
 -->
