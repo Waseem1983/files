@@ -31,7 +31,7 @@ This document's target is to define all payload parameters in the different requ
 |**merchant.addresses**|object[]|N/A ||mandatory |mandatory | | |
 |merchant.addresses.addressType|alphabetic|25 |DEFAULT,  STMT_ADDR,  PAYM_ADDR,  CORRESPONDING,  TRADING|mandatory |mandatory | | |
 |merchant.addresses.name |alphanumeric|100 ||mandatory|N/A| | | |
-|merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|| |  |
+|merchant.addresses.countryCode|alphabetic|4 ||mandatory |mandatory|| | 
 |merchant.addresses.state|alphabetic|100 ||option | optional  | | |
 |merchant.addresses.city|alphabetic|100 ||mandatory | optional| | | |
 |merchant.addresses.phone|numeric|25 ||optional |optional| | | |
@@ -90,9 +90,9 @@ This document's target is to define all payload parameters in the different requ
 |merchant.user.lastName|alphanumeric|100||N/A |N/A | | | |
 |merchant.user.email|alphanumeric|256||N/A |N/A | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNjYyNDI5NCwtMjEzMjgwNTk4Myw1OT
-kwMjg1NSwyMDkxMDAyMDUzLC0xMjg0MjkzODcyLDkzODU2OTQy
-MCwtODAzODkxMjY2LC0xODk5NzcyMzQsNTMxMzU1ODQ2LDk3OD
-AxMjEwOSwtMjA4OTQ1NzY4LC0xMTQzMTAzMjIsMTkzNTgyNDAx
-OCw2Njg3MjY0NzhdfQ==
+eyJoaXN0b3J5IjpbMTk4ODA3MTQzNCwxODE2NjI0Mjk0LC0yMT
+MyODA1OTgzLDU5OTAyODU1LDIwOTEwMDIwNTMsLTEyODQyOTM4
+NzIsOTM4NTY5NDIwLC04MDM4OTEyNjYsLTE4OTk3NzIzNCw1Mz
+EzNTU4NDYsOTc4MDEyMTA5LC0yMDg5NDU3NjgsLTExNDMxMDMy
+MiwxOTM1ODI0MDE4LDY2ODcyNjQ3OF19
 -->
